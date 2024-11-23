@@ -1,0 +1,42 @@
+{
+    "version": "1.0",
+    "session": {
+        "new": true,
+        "sessionId": "amzn1.echo-api.session.123456789",
+        "application": {
+            "applicationId": "[TU-SKILL-ID]"
+        },
+        "user": {
+            "userId": "amzn1.ask.account.123456789"
+        }
+    },
+    "context": {
+        "System": {
+            "application": {
+                "applicationId": "[TU-SKILL-ID]"
+            },
+            "user": {
+                "userId": "amzn1.ask.account.123456789"
+            }
+        }
+    },
+    "request": {
+        "type": "IntentRequest",
+        "requestId": "amzn1.echo-api.request.123456789",
+        "timestamp": "2024-11-22T12:00:00Z",
+        "locale": "es-ES",
+        "intent": {
+            "name": "RegistrarTerapiaIntent",
+            "slots": {
+                "Paciente": {
+                    "name": "Paciente",
+                    "value": "Juan Pérez"
+                },
+                "TipoTerapia": {
+                    "name": "TipoTerapia",
+                    "value": "acupuntura"
+                }
+            }
+        }
+    }
+}

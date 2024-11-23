@@ -1,0 +1,83 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "TherapySystem - Core Infrastructure"
+
+Resources:
+  # IAM Role
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: TherapySystemRole
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: TherapySystemPolicy
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - logs:CreateLogGroup
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                  - dynamodb:GetItem
+                  - dynamodb:PutItem
+                  - dynamodb:Query
+                  - dynamodb:Scan
+                Resource: 
+                  - !Sub "arn:aws:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/TherapySystem:*"
+                  - !GetAtt TherapyTable.Arn
+                  - !Join ["", [!GetAtt TherapyTable.Arn, "/index/*"]]
+
+  # DynamoDB Table
+  TherapyTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: TherapySystem
+      AttributeDefinitions:
+        - AttributeName: PatientID
+          AttributeType: S
+        - AttributeName: TherapyDate
+          AttributeType: S
+        - AttributeName: PatientName
+          AttributeType: S
+      KeySchema:
+        - AttributeName: PatientID
+          KeyType: HASH
+        - AttributeName: TherapyDate
+          KeyType: RANGE
+      GlobalSecondaryIndexes:
+        - IndexName: PatientNameIndex
+          KeySchema:
+            - AttributeName: PatientName
+              KeyType: HASH
+          Projection:
+            ProjectionType: ALL
+          ProvisionedThroughput:
+            ReadCapacityUnits: 5
+            WriteCapacityUnits: 5
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+
+  # Lambda Function
+  TherapyFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: TherapySystem
+      Handler: index.handler
+      Role: !GetAtt LambdaExecutionRole.Arn
+      Code:
+        ZipFile: |
+          # Código será desplegado separadamente
+      Runtime: python3.9
+      Environment:
+        Variables:
+          THERAPY_TABLE: !Ref TherapyTable
+

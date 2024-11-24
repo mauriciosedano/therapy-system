@@ -1,0 +1,86 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "memoria de terapias",
+            "intents": [
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RegistrarTerapiaIntent",
+                    "slots": [
+                        {
+                            "name": "Paciente",
+                            "type": "AMAZON.Person"
+                        },
+                        {
+                            "name": "TipoTerapia",
+                            "type": "TerapiaType"
+                        },
+                        {
+                            "name": "Fecha",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "registra una terapia para {Paciente} {TipoTerapia}",
+                        "registra una terapia de {TipoTerapia} para {Paciente}",
+                        "registra que vino {Paciente} por {TipoTerapia}",
+                        "anota que {Paciente} recibió {TipoTerapia}"
+                    ]
+                },
+                {
+                    "name": "ConsultarTerapiaIntent",
+                    "slots": [
+                        {
+                            "name": "Paciente",
+                            "type": "AMAZON.Person"
+                        }
+                    ],
+                    "samples": [
+                        "qué terapias tiene {Paciente}",
+                        "qué terapias hay",
+                        "muestra las terapias",
+                        "muestra las terapias de {Paciente}",
+                        "qué terapias se han hecho"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "TerapiaType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "tortuga",
+                                "synonyms": ["puntura de la tortuga"]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "moxa",
+                                "synonyms": ["moxibustión"]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tortuga y moxa",
+                                "synonyms": ["puntura de la tortuga y moxibustión"]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
+

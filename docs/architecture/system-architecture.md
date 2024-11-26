@@ -33,3 +33,7 @@
 2. Búsqueda en base de datos
 3. Procesamiento de resultados
 4. Respuesta formateada
+
+### 2.3 Delegación de Accesos
+Delegación permite que los maestros otorguen accesos temporales a los aprendices para consultar o registrar datos. Los accesos se registran en la tabla `AccessDelegation`.
+

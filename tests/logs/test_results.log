@@ -1,0 +1,205 @@
+=== Iniciando pruebas Sun Nov 24 06:10:31 -05 2024 ===
+=== Ejecutando prueba: register_complex ===
+Payload:
+{
+    "version": "1.0",
+    "session": {
+        "new": true,
+        "sessionId": "amzn1.echo-api.session.123456789",
+        "application": {
+            "applicationId": "amzn1.ask.skill.ca25514e-85c2-4ac3-a80b-131912992f23"
+        },
+        "user": {
+            "userId": "amzn1.ask.account.123456789"
+        }
+    },
+    "request": {
+        "type": "IntentRequest",
+        "requestId": "amzn1.echo-api.request.123456789",
+        "timestamp": "2024-11-24T12:00:00Z",
+        "locale": "es-ES",
+        "intent": {
+            "name": "RegistrarTerapiaIntent",
+            "slots": {
+                "Paciente": {
+                    "name": "Paciente",
+                    "value": "Mauricio"
+                },
+                "TipoTerapia": {
+                    "name": "TipoTerapia",
+                    "value": "puntura de la tortuga y moxibustion"
+                },
+                "Fecha": {
+                    "name": "Fecha",
+                    "value": "2024-11-24"
+                }
+            }
+        }
+    }
+}
+{
+    "StatusCode": 200,
+    "LogResult": "U1RBUlQgUmVxdWVzdElkOiA0NTJmNDczYy0zZTY3LTRlMTctOTNjMy1jOGIxMWQ2MTg2MmIgVmVyc2lvbjogJExBVEVTVApbSU5GT10JMjAyNC0xMS0yNFQxMToxMDozMi43MTlaCTQ1MmY0NzNjLTNlNjctNGUxNy05M2MzLWM4YjExZDYxODYyYglFdmVudG8gcmVjaWJpZG86IHsidmVyc2lvbiI6ICIxLjAiLCAic2Vzc2lvbiI6IHsibmV3IjogdHJ1ZSwgInNlc3Npb25JZCI6ICJhbXpuMS5lY2hvLWFwaS5zZXNzaW9uLjEyMzQ1Njc4OSIsICJhcHBsaWNhdGlvbiI6IHsiYXBwbGljYXRpb25JZCI6ICJhbXpuMS5hc2suc2tpbGwuY2EyNTUxNGUtODVjMi00YWMzLWE4MGItMTMxOTEyOTkyZjIzIn0sICJ1c2VyIjogeyJ1c2VySWQiOiAiYW16bjEuYXNrLmFjY291bnQuMTIzNDU2Nzg5In19LCAicmVxdWVzdCI6IHsidHlwZSI6ICJJbnRlbnRSZXF1ZXN0IiwgInJlcXVlc3RJZCI6ICJhbXpuMS5lY2hvLWFwaS5yZXF1ZXN0LjEyMzQ1Njc4OSIsICJ0aW1lc3RhbXAiOiAiMjAyNC0xMS0yNFQxMjowMDowMFoiLCAibG9jYWxlIjogImVzLUVTIiwgImludGVudCI6IHsibmFtZSI6ICJSZWdpc3RyYXJUZXJhcGlhSW50ZW50IiwgInNsb3RzIjogeyJQYWNpZW50ZSI6IHsibmFtZSI6ICJQYWNpZW50ZSIsICJ2YWx1ZSI6ICJNYXVyaWNpbyJ9LCAiVGlwb1RlcmFwaWEiOiB7Im5hbWUiOiAiVGlwb1RlcmFwaWEiLCAidmFsdWUiOiAicHVudHVyYSBkZSBsYSB0b3J0dWdhIHkgbW94aWJ1c3Rpb24ifSwgIkZlY2hhIjogeyJuYW1lIjogIkZlY2hhIiwgInZhbHVlIjogIjIwMjQtMTEtMjQifX19fX0KW0lORk9dCTIwMjQtMTEtMjRUMTE6MTA6MzIuNzE5Wgk0NTJmNDczYy0zZTY3LTRlMTctOTNjMy1jOGIxMWQ2MTg2MmIJSW50ZW50IHJlY2liaWRvOiBSZWdpc3RyYXJUZXJhcGlhSW50ZW50CltJTkZPXQkyMDI0LTExLTI0VDExOjEwOjMyLjcxOVoJNDUyZjQ3M2MtM2U2Ny00ZTE3LTkzYzMtYzhiMTFkNjE4NjJiCUluaWNpYW5kbyByZWdpc3RybyBkZSB0ZXJhcGlhCltJTkZPXQkyMDI0LTExLTI0VDExOjEwOjMyLjcxOVoJNDUyZjQ3M2MtM2U2Ny00ZTE3LTkzYzMtYzhiMTFkNjE4NjJiCURhdG9zIHZhbGlkYWRvczogUGFjaWVudGU9TWF1cmljaW8sIFRlcmFwaWE9cHVudHVyYSBkZSBsYSB0b3J0dWdhIHkgbW94aWJ1c3Rpb24sIEZlY2hhPTIwMjQtMTEtMjQKW0lORk9dCTIwMjQtMTEtMjRUMTE6MTA6MzIuNzE5Wgk0NTJmNDczYy0zZTY3LTRlMTctOTNjMy1jOGIxMWQ2MTg2MmIJSW50ZW50YW5kbyByZWdpc3RyYXI6IHsiUGF0aWVudElEIjogeyJTIjogIlAtNjk5NjQ5ODQ5OTQwOTgxNzE1NiJ9LCAiVGhlcmFweURhdGUiOiB7IlMiOiAiMjAyNC0xMS0yNCJ9LCAiUGF0aWVudE5hbWUiOiB7IlMiOiAiTWF1cmljaW8ifSwgIlRoZXJhcHlUeXBlIjogeyJTIjogInB1bnR1cmEgZGUgbGEgdG9ydHVnYSB5IG1veGlidXN0aW9uIn0sICJUaGVyYXB5SUQiOiB7IlMiOiAiVDE3MzI0NDY2MzIifSwgIlRpbWVzdGFtcCI6IHsiUyI6ICIyMDI0LTExLTI0VDExOjEwOjMyLjcxOTg4MCJ9fQpFTkQgUmVxdWVzdElkOiA0NTJmNDczYy0zZTY3LTRlMTctOTNjMy1jOGIxMWQ2MTg2MmIKUkVQT1JUIFJlcXVlc3RJZDogNDUyZjQ3M2MtM2U2Ny00ZTE3LTkzYzMtYzhiMTFkNjE4NjJiCUR1cmF0aW9uOiAyOS45OSBtcwlCaWxsZWQgRHVyYXRpb246IDMwIG1zCU1lbW9yeSBTaXplOiAxMjggTUIJTWF4IE1lbW9yeSBVc2VkOiA3NiBNQgkK",
+    "ExecutedVersion": "$LATEST"
+}
+Respuesta:
+{"version": "1.0", "response": {"outputSpeech": {"type": "PlainText", "text": "He registrado la terapia de puntura de la tortuga y moxibustion para Mauricio."}, "shouldEndSession": false}}===
+=== Ejecutando prueba: query_simple ===
+Payload:
+{
+    "version": "1.0",
+    "session": {
+        "new": true,
+        "sessionId": "amzn1.echo-api.session.123456789",
+        "application": {
+            "applicationId": "amzn1.ask.skill.ca25514e-85c2-4ac3-a80b-131912992f23"
+        },
+        "user": {
+            "userId": "amzn1.ask.account.123456789"
+        }
+    },
+    "request": {
+        "type": "IntentRequest",
+        "requestId": "amzn1.echo-api.request.123456789",
+        "timestamp": "2024-11-24T12:00:00Z",
+        "locale": "es-ES",
+        "intent": {
+            "name": "ConsultarTerapiaIntent"
+        }
+    }
+}
+{
+    "StatusCode": 200,
+    "LogResult": "U1RBUlQgUmVxdWVzdElkOiA4NDQyNWViMi1hYWQwLTQ2MDYtODdkZi03NTE5NTFiMDU4OWQgVmVyc2lvbjogJExBVEVTVApbSU5GT10JMjAyNC0xMS0yNFQxMToxMDozMy45MzhaCTg0NDI1ZWIyLWFhZDAtNDYwNi04N2RmLTc1MTk1MWIwNTg5ZAlFdmVudG8gcmVjaWJpZG86IHsidmVyc2lvbiI6ICIxLjAiLCAic2Vzc2lvbiI6IHsibmV3IjogdHJ1ZSwgInNlc3Npb25JZCI6ICJhbXpuMS5lY2hvLWFwaS5zZXNzaW9uLjEyMzQ1Njc4OSIsICJhcHBsaWNhdGlvbiI6IHsiYXBwbGljYXRpb25JZCI6ICJhbXpuMS5hc2suc2tpbGwuY2EyNTUxNGUtODVjMi00YWMzLWE4MGItMTMxOTEyOTkyZjIzIn0sICJ1c2VyIjogeyJ1c2VySWQiOiAiYW16bjEuYXNrLmFjY291bnQuMTIzNDU2Nzg5In19LCAicmVxdWVzdCI6IHsidHlwZSI6ICJJbnRlbnRSZXF1ZXN0IiwgInJlcXVlc3RJZCI6ICJhbXpuMS5lY2hvLWFwaS5yZXF1ZXN0LjEyMzQ1Njc4OSIsICJ0aW1lc3RhbXAiOiAiMjAyNC0xMS0yNFQxMjowMDowMFoiLCAibG9jYWxlIjogImVzLUVTIiwgImludGVudCI6IHsibmFtZSI6ICJDb25zdWx0YXJUZXJhcGlhSW50ZW50In19fQpbSU5GT10JMjAyNC0xMS0yNFQxMToxMDozMy45MzlaCTg0NDI1ZWIyLWFhZDAtNDYwNi04N2RmLTc1MTk1MWIwNTg5ZAlJbnRlbnQgcmVjaWJpZG86IENvbnN1bHRhclRlcmFwaWFJbnRlbnQKW0lORk9dCTIwMjQtMTEtMjRUMTE6MTA6MzMuOTM5Wgk4NDQyNWViMi1hYWQwLTQ2MDYtODdkZi03NTE5NTFiMDU4OWQJSW5pY2lhbmRvIGNvbnN1bHRhIGRlIHRlcmFwaWEKRU5EIFJlcXVlc3RJZDogODQ0MjVlYjItYWFkMC00NjA2LTg3ZGYtNzUxOTUxYjA1ODlkClJFUE9SVCBSZXF1ZXN0SWQ6IDg0NDI1ZWIyLWFhZDAtNDYwNi04N2RmLTc1MTk1MWIwNTg5ZAlEdXJhdGlvbjogMzAuNTkgbXMJQmlsbGVkIER1cmF0aW9uOiAzMSBtcwlNZW1vcnkgU2l6ZTogMTI4IE1CCU1heCBNZW1vcnkgVXNlZDogNzYgTUIJCg==",
+    "ExecutedVersion": "$LATEST"
+}
+Respuesta:
+{"version": "1.0", "response": {"outputSpeech": {"type": "PlainText", "text": "Las \u00faltimas terapias registradas fueron: acupuntura el 2024-11-23, moxibusti\u00f3n el 2024-11-10, acupuntura el 2024-11-23, acupuntura el 2024-11-24, puntura de la tortuga y moxibustion el 2024-11-24"}, "shouldEndSession": false}}===
+=== Logs de CloudWatch ===
+{
+    "events": [
+        {
+            "timestamp": 1732446590223,
+            "message": "INIT_START Runtime Version: python:3.9.v64\tRuntime Version ARN: arn:aws:lambda:us-east-1::runtime:57e9dce4a928fd5b7bc1015238a5bc8a9146f096d69571fa4219ed8a2e76bfdf\n",
+            "ingestionTime": 1732446592142
+        },
+        {
+            "timestamp": 1732446590512,
+            "message": "[INFO]\t2024-11-24T11:09:50.512Z\t\tFound credentials in environment variables.\n",
+            "ingestionTime": 1732446592142
+        },
+        {
+            "timestamp": 1732446590651,
+            "message": "START RequestId: b0bcaf6f-119c-47bc-b8f1-07f20cbd3b4a Version: $LATEST\n",
+            "ingestionTime": 1732446592142
+        },
+        {
+            "timestamp": 1732446590651,
+            "message": "[INFO]\t2024-11-24T11:09:50.651Z\tb0bcaf6f-119c-47bc-b8f1-07f20cbd3b4a\tEvento recibido: {\"version\": \"1.0\", \"session\": {\"new\": true, \"sessionId\": \"amzn1.echo-api.session.123456789\", \"application\": {\"applicationId\": \"[TU-SKILL-ID]\"}, \"user\": {\"userId\": \"amzn1.ask.account.123456789\"}}, \"context\": {\"System\": {\"application\": {\"applicationId\": \"[TU-SKILL-ID]\"}, \"user\": {\"userId\": \"amzn1.ask.account.123456789\"}}}, \"request\": {\"type\": \"IntentRequest\", \"requestId\": \"amzn1.echo-api.request.123456789\", \"timestamp\": \"2024-11-22T12:00:00Z\", \"locale\": \"es-ES\", \"intent\": {\"name\": \"RegistrarTerapiaIntent\", \"slots\": {\"Paciente\": {\"name\": \"Paciente\", \"value\": \"Juan P\\u00e9rez\"}, \"TipoTerapia\": {\"name\": \"TipoTerapia\", \"value\": \"acupuntura\"}}}}}\n",
+            "ingestionTime": 1732446592142
+        },
+        {
+            "timestamp": 1732446590651,
+            "message": "[INFO]\t2024-11-24T11:09:50.651Z\tb0bcaf6f-119c-47bc-b8f1-07f20cbd3b4a\tIntent recibido: RegistrarTerapiaIntent\n",
+            "ingestionTime": 1732446592142
+        },
+        {
+            "timestamp": 1732446590651,
+            "message": "[INFO]\t2024-11-24T11:09:50.651Z\tb0bcaf6f-119c-47bc-b8f1-07f20cbd3b4a\tIniciando registro de terapia\n",
+            "ingestionTime": 1732446592142
+        },
+        {
+            "timestamp": 1732446590651,
+            "message": "[INFO]\t2024-11-24T11:09:50.651Z\tb0bcaf6f-119c-47bc-b8f1-07f20cbd3b4a\tDatos validados: Paciente=Juan Pérez, Terapia=acupuntura, Fecha=2024-11-24\n",
+            "ingestionTime": 1732446592142
+        },
+        {
+            "timestamp": 1732446590652,
+            "message": "[INFO]\t2024-11-24T11:09:50.652Z\tb0bcaf6f-119c-47bc-b8f1-07f20cbd3b4a\tIntentando registrar: {\"PatientID\": {\"S\": \"P8547326567293594070\"}, \"TherapyDate\": {\"S\": \"2024-11-24\"}, \"PatientName\": {\"S\": \"Juan P\\u00e9rez\"}, \"TherapyType\": {\"S\": \"acupuntura\"}, \"TherapyID\": {\"S\": \"T1732446590\"}, \"Timestamp\": {\"S\": \"2024-11-24T11:09:50.651981\"}}\n",
+            "ingestionTime": 1732446592142
+        },
+        {
+            "timestamp": 1732446590911,
+            "message": "END RequestId: b0bcaf6f-119c-47bc-b8f1-07f20cbd3b4a\n",
+            "ingestionTime": 1732446592142
+        },
+        {
+            "timestamp": 1732446590911,
+            "message": "REPORT RequestId: b0bcaf6f-119c-47bc-b8f1-07f20cbd3b4a\tDuration: 260.71 ms\tBilled Duration: 261 ms\tMemory Size: 128 MB\tMax Memory Used: 76 MB\tInit Duration: 427.08 ms\t\n",
+            "ingestionTime": 1732446592142
+        },
+        {
+            "timestamp": 1732446613399,
+            "message": "START RequestId: bcdb1c60-b6b4-4da7-9ccb-eee90227e731 Version: $LATEST\n",
+            "ingestionTime": 1732446622414
+        },
+        {
+            "timestamp": 1732446613399,
+            "message": "[INFO]\t2024-11-24T11:10:13.399Z\tbcdb1c60-b6b4-4da7-9ccb-eee90227e731\tEvento recibido: {\"version\": \"1.0\", \"session\": {\"new\": true, \"sessionId\": \"amzn1.echo-api.session.123456789\", \"application\": {\"applicationId\": \"amzn1.ask.skill.ca25514e-85c2-4ac3-a80b-131912992f23\"}, \"user\": {\"userId\": \"amzn1.ask.account.123456789\"}}, \"request\": {\"type\": \"IntentRequest\", \"requestId\": \"amzn1.echo-api.request.123456789\", \"timestamp\": \"2024-11-24T12:00:00Z\", \"locale\": \"es-ES\", \"intent\": {\"name\": \"RegistrarTerapiaIntent\", \"slots\": {\"Paciente\": {\"name\": \"Paciente\", \"value\": \"Mauricio\"}, \"TipoTerapia\": {\"name\": \"TipoTerapia\", \"value\": \"puntura de la tortuga y moxibustion\"}, \"Fecha\": {\"name\": \"Fecha\", \"value\": \"2024-11-24\"}}}}}\n",
+            "ingestionTime": 1732446622414
+        },
+        {
+            "timestamp": 1732446613399,
+            "message": "[INFO]\t2024-11-24T11:10:13.399Z\tbcdb1c60-b6b4-4da7-9ccb-eee90227e731\tIntent recibido: RegistrarTerapiaIntent\n",
+            "ingestionTime": 1732446622414
+        },
+        {
+            "timestamp": 1732446613399,
+            "message": "[INFO]\t2024-11-24T11:10:13.399Z\tbcdb1c60-b6b4-4da7-9ccb-eee90227e731\tIniciando registro de terapia\n",
+            "ingestionTime": 1732446622414
+        },
+        {
+            "timestamp": 1732446613400,
+            "message": "[INFO]\t2024-11-24T11:10:13.400Z\tbcdb1c60-b6b4-4da7-9ccb-eee90227e731\tDatos validados: Paciente=Mauricio, Terapia=puntura de la tortuga y moxibustion, Fecha=2024-11-24\n",
+            "ingestionTime": 1732446622414
+        },
+        {
+            "timestamp": 1732446613400,
+            "message": "[INFO]\t2024-11-24T11:10:13.400Z\tbcdb1c60-b6b4-4da7-9ccb-eee90227e731\tIntentando registrar: {\"PatientID\": {\"S\": \"P-6996498499409817156\"}, \"TherapyDate\": {\"S\": \"2024-11-24\"}, \"PatientName\": {\"S\": \"Mauricio\"}, \"TherapyType\": {\"S\": \"puntura de la tortuga y moxibustion\"}, \"TherapyID\": {\"S\": \"T1732446613\"}, \"Timestamp\": {\"S\": \"2024-11-24T11:10:13.400079\"}}\n",
+            "ingestionTime": 1732446622414
+        },
+        {
+            "timestamp": 1732446613412,
+            "message": "END RequestId: bcdb1c60-b6b4-4da7-9ccb-eee90227e731\n",
+            "ingestionTime": 1732446622414
+        },
+        {
+            "timestamp": 1732446613412,
+            "message": "REPORT RequestId: bcdb1c60-b6b4-4da7-9ccb-eee90227e731\tDuration: 10.89 ms\tBilled Duration: 11 ms\tMemory Size: 128 MB\tMax Memory Used: 76 MB\t\n",
+            "ingestionTime": 1732446622414
+        },
+        {
+            "timestamp": 1732446614646,
+            "message": "START RequestId: 1941cca8-adcb-4637-88a5-841adad14301 Version: $LATEST\n",
+            "ingestionTime": 1732446622414
+        },
+        {
+            "timestamp": 1732446614646,
+            "message": "[INFO]\t2024-11-24T11:10:14.646Z\t1941cca8-adcb-4637-88a5-841adad14301\tEvento recibido: {\"version\": \"1.0\", \"session\": {\"new\": true, \"sessionId\": \"amzn1.echo-api.session.123456789\", \"application\": {\"applicationId\": \"amzn1.ask.skill.ca25514e-85c2-4ac3-a80b-131912992f23\"}, \"user\": {\"userId\": \"amzn1.ask.account.123456789\"}}, \"request\": {\"type\": \"IntentRequest\", \"requestId\": \"amzn1.echo-api.request.123456789\", \"timestamp\": \"2024-11-24T12:00:00Z\", \"locale\": \"es-ES\", \"intent\": {\"name\": \"ConsultarTerapiaIntent\"}}}\n",
+            "ingestionTime": 1732446622414
+        },
+        {
+            "timestamp": 1732446614646,
+            "message": "[INFO]\t2024-11-24T11:10:14.646Z\t1941cca8-adcb-4637-88a5-841adad14301\tIntent recibido: ConsultarTerapiaIntent\n",
+            "ingestionTime": 1732446622414
+        },
+        {
+            "timestamp": 1732446614646,
+            "message": "[INFO]\t2024-11-24T11:10:14.646Z\t1941cca8-adcb-4637-88a5-841adad14301\tIniciando consulta de terapia\n",
+            "ingestionTime": 1732446622414
+        },
+        {
+            "timestamp": 1732446614691,
+            "message": "END RequestId: 1941cca8-adcb-4637-88a5-841adad14301\n",
+            "ingestionTime": 1732446622414
+        },
+        {
+            "timestamp": 1732446614691,
+            "message": "REPORT RequestId: 1941cca8-adcb-4637-88a5-841adad14301\tDuration: 44.89 ms\tBilled Duration: 45 ms\tMemory Size: 128 MB\tMax Memory Used: 76 MB\t\n",
+            "ingestionTime": 1732446622414
+        }
+    ],
+    "nextForwardToken": "f/38634850524280950771142657925249483596181744967268630541/s",
+    "nextBackwardToken": "b/38634849978626317253495370861556797950868298163461488640/s"
+}
+=== Fin de pruebas Sun Nov 24 06:10:36 -05 2024 ===

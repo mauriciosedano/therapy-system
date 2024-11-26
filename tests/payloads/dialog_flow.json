@@ -1,0 +1,28 @@
+{
+    "version": "1.0",
+    "session": {
+        "new": false,
+        "sessionId": "amzn1.echo-api.session.test",
+        "application": {
+            "applicationId": "amzn1.ask.skill.ca25514e-85c2-4ac3-a80b-131912992f23"
+        },
+        "attributes": {
+            "lastPatient": "Rosa",
+            "possibleMatches": ["Rosa Martínez", "Rosa Flores"]
+        },
+        "user": {
+            "userId": "amzn1.ask.account.test"
+        }
+    },
+    "request": {
+        "type": "IntentRequest",
+        "intent": {
+            "name": "ConfirmarPacienteIntent",
+            "slots": {
+                "Confirmacion": {
+                    "value": "Rosa Martínez"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+{"errorMessage": "Syntax error in module 'index': invalid syntax (index.py, line 1)", "errorType": "Runtime.UserCodeSyntaxError", "requestId": "", "stackTrace": ["  File \"/var/task/index.py\" Line 1\n    [C\u00f3digo anterior actualizado usando RemedyName en lugar de Names]\n"]}

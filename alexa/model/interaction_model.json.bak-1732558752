@@ -1,0 +1,101 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "terapias homeopáticas",
+            "intents": [
+                {
+                    "name": "ConsultarRemedioIntent",
+                    "slots": [
+                        {
+                            "name": "Remedio",
+                            "type": "RemedioType"
+                        }
+                    ],
+                    "samples": [
+                        "para qué sirve {Remedio}",
+                        "cuéntame sobre {Remedio}",
+                        "explícame {Remedio}",
+                        "qué hace {Remedio}",
+                        "propiedades de {Remedio}",
+                        "usos de {Remedio}",
+                        "cuándo usar {Remedio}"
+                    ]
+                },
+                {
+                    "name": "ConsultarFormulaIntent",
+                    "slots": [
+                        {
+                            "name": "Condicion",
+                            "type": "CondicionType"
+                        }
+                    ],
+                    "samples": [
+                        "qué fórmula usamos para {Condicion}",
+                        "qué llevaba la fórmula para {Condicion}",
+                        "cómo preparamos la fórmula de {Condicion}",
+                        "qué preparación usamos para {Condicion}",
+                        "receta para {Condicion}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "RemedioType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "White Chestnut"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star of Bethlehem"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Cherry Plum"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rescue Remedy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Walnut"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "CondicionType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "insomnio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ansiedad"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "duelo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "estrés"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
+

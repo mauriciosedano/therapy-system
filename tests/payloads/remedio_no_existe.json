@@ -1,0 +1,13 @@
+{
+    "request": {
+        "type": "IntentRequest",
+        "intent": {
+            "name": "ConsultarRemedioIntent",
+            "slots": {
+                "Remedio": {
+                    "value": "Remedio Inexistente"
+                }
+            }
+        }
+    }
+}

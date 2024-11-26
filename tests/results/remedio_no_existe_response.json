@@ -1,0 +1,1 @@
+{"errorMessage": "Syntax error in module 'index': invalid syntax (index.py, line 6)", "errorType": "Runtime.UserCodeSyntaxError", "requestId": "", "stackTrace": ["  File \"/var/task/index.py\" Line 6\n    from lambda.knowledge.remedies import HomeopathicKnowledge\n"]}

@@ -150,3 +150,84 @@ def build_response(speech_text, should_end_session=False):
             "shouldEndSession": should_end_session
         }
     }
+
+# Añadir al archivo src/lambda/core/index.py
+async def consultar_remedio(event):
+    """Handler para ConsultarRemedioIntent."""
+    try:
+        slots = event['request']['intent']['slots']
+        remedio = slots.get('Remedio', {}).get('value')
+        
+        if not remedio:
+            return build_response(
+                "¿Qué remedio te gustaría consultar?"
+            )
+        
+        # Consultar información del remedio
+        info = await homeopathic.get_remedy_info(remedio)
+        
+        if not info:
+            return build_response(
+                f"No encontré información sobre {remedio}. "
+                "¿Quizás podrías reformular el nombre?"
+            )
+        
+        # Formatear respuesta
+        remedio_info = info[0]
+        respuesta = (
+            f"{remedio} se usa principalmente para: "
+            f"{remedio_info['Properties']['S']}. "
+            f"\n\nSe combina bien con: {remedio_info['Combinations']['S']}. "
+            f"\n\nPrecauciones: {remedio_info['Contraindications']['S']}"
+        )
+        
+        return build_response(respuesta)
+        
+    except Exception as e:
+        print(f"Error consultando remedio: {str(e)}")
+        return build_response(
+            "Hubo un error consultando el remedio. Por favor, intenta nuevamente."
+        )
+
+async def consultar_formula(event):
+    """Handler para ConsultarFormulaIntent."""
+    try:
+        slots = event['request']['intent']['slots']
+        condicion = slots.get('Condicion', {}).get('value')
+        
+        if not condicion:
+            return build_response(
+                "¿Para qué condición necesitas la fórmula?"
+            )
+        
+        # Consultar fórmula
+        response = await dynamodb.query(
+            TableName="TherapySystem_Formulas",
+            IndexName="ConditionIndex",
+            KeyConditionExpression="Condition = :cond",
+            ExpressionAttributeValues={
+                ":cond": {"S": condicion.lower()}
+            }
+        )
+        
+        if not response.get('Items'):
+            return build_response(
+                f"No encontré una fórmula específica para {condicion}. "
+                "¿Quieres que te sugiera algunas alternativas?"
+            )
+        
+        formula = response['Items'][0]
+        respuesta = (
+            f"Para {condicion} normalmente usamos: "
+            f"\n- {formula['BaseComponent']['S']} como base"
+            f"\n- Complementamos con {formula['Complements']['S']}"
+            f"\n\nDosificación: {formula['Dosage']['S']}"
+        )
+        
+        return build_response(respuesta)
+        
+    except Exception as e:
+        print(f"Error consultando fórmula: {str(e)}")
+        return build_response(
+            "Hubo un error consultando la fórmula. Por favor, intenta nuevamente."
+        )

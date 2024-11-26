@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "terapias homeopáticas",
+            "invocationName": "memoria de terapias",
             "intents": [
                 {
                     "name": "AMAZON.HelpIntent",
@@ -53,24 +53,6 @@
                         "muestra las terapias de {Paciente}",
                         "qué terapias se han hecho"
                     ]
-                },
-                {
-                    "name": "ConsultarRemedioIntent",
-                    "slots": [
-                        {
-                            "name": "Remedio",
-                            "type": "RemedioType"
-                        }
-                    ],
-                    "samples": [
-                        "para qué sirve {Remedio}",
-                        "cuéntame sobre {Remedio}",
-                        "explícame {Remedio}",
-                        "qué hace {Remedio}",
-                        "propiedades de {Remedio}",
-                        "usos de {Remedio}",
-                        "cuándo usar {Remedio}"
-                    ]
                 }
             ],
             "types": [
@@ -96,28 +78,9 @@
                             }
                         }
                     ]
-                },
-                {
-                    "name": "RemedioType",
-                    "values": [
-                        {
-                            "name": {"value": "White Chestnut"}
-                        },
-                        {
-                            "name": {"value": "Star of Bethlehem"}
-                        },
-                        {
-                            "name": {"value": "Cherry Plum"}
-                        },
-                        {
-                            "name": {"value": "Rescue Remedy"}
-                        },
-                        {
-                            "name": {"value": "Walnut"}
-                        }
-                    ]
                 }
             ]
         }
     }
 }
+

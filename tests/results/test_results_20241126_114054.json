@@ -1,0 +1,27 @@
+[
+  {
+    "test": "test_delegation_table",
+    "status": "PASS",
+    "timestamp": "2024-11-26T11:40:53.840030"
+  },
+  {
+    "test": "test_audit_table",
+    "status": "PASS",
+    "timestamp": "2024-11-26T11:40:54.087347"
+  },
+  {
+    "test": "test_patient_lookup",
+    "status": "PASS",
+    "timestamp": "2024-11-26T11:40:54.219069"
+  },
+  {
+    "test": "test_therapy_registration",
+    "status": "PASS",
+    "timestamp": "2024-11-26T11:40:54.342615"
+  },
+  {
+    "test": "test_access_verification",
+    "status": "PASS",
+    "timestamp": "2024-11-26T11:40:54.468938"
+  }
+]

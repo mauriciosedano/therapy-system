@@ -1,0 +1,29 @@
+[
+  {
+    "test": "test_delegation_table",
+    "status": "PASS",
+    "timestamp": "2024-11-26T11:38:39.739799"
+  },
+  {
+    "test": "test_audit_table",
+    "status": "PASS",
+    "timestamp": "2024-11-26T11:38:39.978348"
+  },
+  {
+    "test": "test_patient_lookup",
+    "status": "FAIL",
+    "error": "An error occurred (ResourceNotFoundException) when calling the Scan operation: Requested resource not found",
+    "timestamp": "2024-11-26T11:38:40.103791"
+  },
+  {
+    "test": "test_therapy_registration",
+    "status": "FAIL",
+    "error": "An error occurred (ResourceNotFoundException) when calling the PutItem operation: Requested resource not found",
+    "timestamp": "2024-11-26T11:38:40.222694"
+  },
+  {
+    "test": "test_access_verification",
+    "status": "PASS",
+    "timestamp": "2024-11-26T11:38:40.346761"
+  }
+]

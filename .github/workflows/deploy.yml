@@ -1,0 +1,45 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+    
+    - name: Validate CloudFormation templates
+      run: |
+        aws cloudformation validate-template --template-body file://infrastructure/cloudformation/almacenamiento.yml
+        aws cloudformation validate-template --template-body file://infrastructure/cloudformation/computacion.yml
+    
+    - name: Deploy infrastructure
+      run: |
+        aws cloudformation create-stack --stack-name sistema-terapias-almacenamiento --template-body file://infrastructure/cloudformation/almacenamiento.yml
+        aws cloudformation create-stack --stack-name sistema-terapias-computacion --template-body file://infrastructure/cloudformation/computacion.yml --capabilities CAPABILITY_NAMED_IAM
+    
+    - name: Update Lambda function
+      run: |
+        cd src/lambda
+        zip -r ../../lambda.zip .
+        aws lambda update-function-code --function-name sistema-terapias-v2 --zip-file fileb://../../lambda.zip
+    
+    - name: Run unit tests
+      run: pytest tests/unit/
+    
+    - name: Run integration tests
+      run: pytest tests/integration/
+
+    - name: Update Alexa Skill
+      run: ask deploy --skill-id amzn1.ask.skill.xxx --profile default

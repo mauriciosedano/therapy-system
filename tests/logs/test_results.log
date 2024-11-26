@@ -203,3 +203,109 @@ Respuesta:
     "nextBackwardToken": "b/38634849978626317253495370861556797950868298163461488640/s"
 }
 === Fin de pruebas Sun Nov 24 06:10:36 -05 2024 ===
+{
+    "events": [
+        {
+            "timestamp": 1732592504582,
+            "message": "INIT_START Runtime Version: python:3.9.v64\tRuntime Version ARN: arn:aws:lambda:us-east-1::runtime:57e9dce4a928fd5b7bc1015238a5bc8a9146f096d69571fa4219ed8a2e76bfdf\n",
+            "ingestionTime": 1732592512945
+        },
+        {
+            "timestamp": 1732592504888,
+            "message": "[INFO]\t2024-11-26T03:41:44.888Z\t\tFound credentials in environment variables.\n",
+            "ingestionTime": 1732592512945
+        },
+        {
+            "timestamp": 1732592505014,
+            "message": "START RequestId: 32364b15-e76f-4ef9-a687-45c32e92ef91 Version: $LATEST\n",
+            "ingestionTime": 1732592512945
+        },
+        {
+            "timestamp": 1732592505017,
+            "message": "[INFO]\t2024-11-26T03:41:45.015Z\t32364b15-e76f-4ef9-a687-45c32e92ef91\tEvento recibido: {\"version\": \"1.0\", \"session\": {\"new\": true, \"sessionId\": \"amzn1.echo-api.session.test\", \"application\": {\"applicationId\": \"amzn1.ask.skill.028ef8b0-b7cd-45e7-bc9c-08a4a213921e\"}, \"user\": {\"userId\": \"amzn1.ask.account.test\"}}, \"request\": {\"type\": \"IntentRequest\", \"requestId\": \"amzn1.echo-api.request.test\", \"timestamp\": \"2024-11-25T12:00:00Z\", \"locale\": \"es-ES\", \"intent\": {\"name\": \"RegistrarFormulaIntent\", \"slots\": {\"Paciente\": {\"name\": \"Paciente\", \"value\": \"Ana L\\u00f3pez\"}, \"TipoFormula\": {\"name\": \"TipoFormula\", \"value\": \"Star of Bethlehem\"}}}}}\n",
+            "ingestionTime": 1732592512945
+        },
+        {
+            "timestamp": 1732592505051,
+            "message": "[INFO]\t2024-11-26T03:41:45.017Z\t32364b15-e76f-4ef9-a687-45c32e92ef91\tIntent recibido: RegistrarFormulaIntent\n",
+            "ingestionTime": 1732592512945
+        },
+        {
+            "timestamp": 1732592505051,
+            "message": "[INFO]\t2024-11-26T03:41:45.051Z\t32364b15-e76f-4ef9-a687-45c32e92ef91\tIniciando registro de fórmula: {\"version\": \"1.0\", \"session\": {\"new\": true, \"sessionId\": \"amzn1.echo-api.session.test\", \"application\": {\"applicationId\": \"amzn1.ask.skill.028ef8b0-b7cd-45e7-bc9c-08a4a213921e\"}, \"user\": {\"userId\": \"amzn1.ask.account.test\"}}, \"request\": {\"type\": \"IntentRequest\", \"requestId\": \"amzn1.echo-api.request.test\", \"timestamp\": \"2024-11-25T12:00:00Z\", \"locale\": \"es-ES\", \"intent\": {\"name\": \"RegistrarFormulaIntent\", \"slots\": {\"Paciente\": {\"name\": \"Paciente\", \"value\": \"Ana L\\u00f3pez\"}, \"TipoFormula\": {\"name\": \"TipoFormula\", \"value\": \"Star of Bethlehem\"}}}}}\n",
+            "ingestionTime": 1732592512945
+        },
+        {
+            "timestamp": 1732592505292,
+            "message": "END RequestId: 32364b15-e76f-4ef9-a687-45c32e92ef91\n",
+            "ingestionTime": 1732592512945
+        },
+        {
+            "timestamp": 1732592505292,
+            "message": "REPORT RequestId: 32364b15-e76f-4ef9-a687-45c32e92ef91\tDuration: 277.47 ms\tBilled Duration: 278 ms\tMemory Size: 128 MB\tMax Memory Used: 76 MB\tInit Duration: 431.16 ms\t\n",
+            "ingestionTime": 1732592512945
+        },
+        {
+            "timestamp": 1732592581998,
+            "message": "START RequestId: f4f8d24a-78a4-4af5-be7f-74656df58430 Version: $LATEST\n",
+            "ingestionTime": 1732592591016
+        },
+        {
+            "timestamp": 1732592581998,
+            "message": "[INFO]\t2024-11-26T03:43:01.998Z\tf4f8d24a-78a4-4af5-be7f-74656df58430\tEvento recibido: {\"version\": \"1.0\", \"request\": {\"type\": \"IntentRequest\", \"intent\": {\"name\": \"ConsultarFormulaIntent\", \"slots\": {\"TipoFormula\": {\"name\": \"TipoFormula\", \"value\": \"Star of Bethlehem\"}}}}}\n",
+            "ingestionTime": 1732592591016
+        },
+        {
+            "timestamp": 1732592581999,
+            "message": "[INFO]\t2024-11-26T03:43:01.999Z\tf4f8d24a-78a4-4af5-be7f-74656df58430\tIntent recibido: ConsultarFormulaIntent\n",
+            "ingestionTime": 1732592591016
+        },
+        {
+            "timestamp": 1732592581999,
+            "message": "[INFO]\t2024-11-26T03:43:01.999Z\tf4f8d24a-78a4-4af5-be7f-74656df58430\tIniciando consulta de fórmula: {\"version\": \"1.0\", \"request\": {\"type\": \"IntentRequest\", \"intent\": {\"name\": \"ConsultarFormulaIntent\", \"slots\": {\"TipoFormula\": {\"name\": \"TipoFormula\", \"value\": \"Star of Bethlehem\"}}}}}\n",
+            "ingestionTime": 1732592591016
+        },
+        {
+            "timestamp": 1732592582014,
+            "message": "END RequestId: f4f8d24a-78a4-4af5-be7f-74656df58430\n",
+            "ingestionTime": 1732592591016
+        },
+        {
+            "timestamp": 1732592582014,
+            "message": "REPORT RequestId: f4f8d24a-78a4-4af5-be7f-74656df58430\tDuration: 16.18 ms\tBilled Duration: 17 ms\tMemory Size: 128 MB\tMax Memory Used: 76 MB\t\n",
+            "ingestionTime": 1732592591016
+        },
+        {
+            "timestamp": 1732592628939,
+            "message": "START RequestId: 00a2fc7a-dc3b-49ad-8e7c-a6b619e01af5 Version: $LATEST\n",
+            "ingestionTime": 1732592637956
+        },
+        {
+            "timestamp": 1732592628940,
+            "message": "[INFO]\t2024-11-26T03:43:48.940Z\t00a2fc7a-dc3b-49ad-8e7c-a6b619e01af5\tEvento recibido: {\"version\": \"1.0\", \"request\": {\"type\": \"IntentRequest\", \"intent\": {\"name\": \"ConsultarFormulaIntent\", \"slots\": {\"TipoFormula\": {\"name\": \"TipoFormula\", \"value\": \"Star of Bethlehem\"}}}}}\n",
+            "ingestionTime": 1732592637956
+        },
+        {
+            "timestamp": 1732592628940,
+            "message": "[INFO]\t2024-11-26T03:43:48.940Z\t00a2fc7a-dc3b-49ad-8e7c-a6b619e01af5\tIntent recibido: ConsultarFormulaIntent\n",
+            "ingestionTime": 1732592637956
+        },
+        {
+            "timestamp": 1732592628940,
+            "message": "[INFO]\t2024-11-26T03:43:48.940Z\t00a2fc7a-dc3b-49ad-8e7c-a6b619e01af5\tIniciando consulta de fórmula: {\"version\": \"1.0\", \"request\": {\"type\": \"IntentRequest\", \"intent\": {\"name\": \"ConsultarFormulaIntent\", \"slots\": {\"TipoFormula\": {\"name\": \"TipoFormula\", \"value\": \"Star of Bethlehem\"}}}}}\n",
+            "ingestionTime": 1732592637956
+        },
+        {
+            "timestamp": 1732592628954,
+            "message": "END RequestId: 00a2fc7a-dc3b-49ad-8e7c-a6b619e01af5\n",
+            "ingestionTime": 1732592637956
+        },
+        {
+            "timestamp": 1732592628954,
+            "message": "REPORT RequestId: 00a2fc7a-dc3b-49ad-8e7c-a6b619e01af5\tDuration: 14.59 ms\tBilled Duration: 15 ms\tMemory Size: 128 MB\tMax Memory Used: 76 MB\t\n",
+            "ingestionTime": 1732592637956
+        }
+    ],
+    "nextForwardToken": "f/38638106751155465008763776529799774146612397804576702469/s",
+    "nextBackwardToken": "b/38638103977567183177113115019590673120878878251471929344/s"
+}

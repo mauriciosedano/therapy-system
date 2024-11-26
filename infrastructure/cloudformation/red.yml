@@ -1,0 +1,25 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Descripción: "Red base para el Sistema de Terapias"
+
+Recursos:
+  RedeVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.0.0.0/16
+      InstanceTenancy: default
+      EnableDnsHostnames: true
+      EnableDnsSupport: true
+      Tags:
+        - Key: Nombre
+          Value: VPC-Sistema-Terapias
+
+  SubredaPublica:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref RedeVPC
+      CidrBlock: 10.0.1.0/24
+      AvailabilityZone: us-east-1a
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Nombre
+          Value: Subred-Publica

@@ -1,0 +1,32 @@
+[
+  {
+    "intent": "ConsultarAccionesAprendizIntent",
+    "status": "FAIL",
+    "error": "Formato de respuesta inv\u00e1lido",
+    "timestamp": "2024-11-26T11:47:43.411345"
+  },
+  {
+    "intent": "ConsultarTerapiaIntent",
+    "status": "FAIL",
+    "error": "Formato de respuesta inv\u00e1lido",
+    "timestamp": "2024-11-26T11:47:44.948361"
+  },
+  {
+    "intent": "DelegarAccesoIntent",
+    "status": "FAIL",
+    "error": "Formato de respuesta inv\u00e1lido",
+    "timestamp": "2024-11-26T11:47:46.263169"
+  },
+  {
+    "intent": "RegistrarTerapiaIntent",
+    "status": "FAIL",
+    "error": "Formato de respuesta inv\u00e1lido",
+    "timestamp": "2024-11-26T11:47:47.574191"
+  },
+  {
+    "intent": "RegistrarPacienteIntent",
+    "status": "FAIL",
+    "error": "Formato de respuesta inv\u00e1lido",
+    "timestamp": "2024-11-26T11:47:48.838579"
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "session": {
+    "new": true,
+    "sessionId": "amzn1.echo-api.session.dddcd5d2-c228-48f3-9658-efa1a98ffde1",
+    "application": {
+      "applicationId": "amzn1.ask.skill.028ef8b0-b7cd-45e7-bc9c-08a4a213921e"
+    },
+    "user": {
+      "userId": "amzn1.ask.account.TEST_USER"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "amzn1.echo-api.request.6d9d129b-4d40-4f6a-8c9b-bdace4ffa0af",
+    "timestamp": "2024-11-26T17:06:06.796701",
+    "locale": "es-ES",
+    "intent": {
+      "name": "ConsultarAccionesAprendizIntent",
+      "slots": {
+        "Aprendiz": {
+          "name": "Aprendiz",
+          "value": "Ana"
+        }
+      }
+    }
+  }
+}

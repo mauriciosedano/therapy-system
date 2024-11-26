@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Crear tabla de delegación de acceso
+echo "Creando tabla AccessDelegation..."
 aws dynamodb create-table \
   --table-name AccessDelegation \
   --attribute-definitions \
@@ -18,6 +19,7 @@ aws dynamodb create-table \
   --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5
 
 # Crear tabla de auditoría
+echo "Creando tabla AuditLog..."
 aws dynamodb create-table \
   --table-name AuditLog \
   --attribute-definitions \
@@ -38,5 +40,4 @@ aws dynamodb create-table \
     }]" \
   --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5
 
-# Agregar permisos en el template de CloudFormation
-echo "Ahora actualiza el template de CloudFormation para incluir los permisos de las nuevas tablas"
+echo "✅ Tablas creadas exitosamente"

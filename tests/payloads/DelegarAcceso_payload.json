@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "session": {
+    "new": true,
+    "sessionId": "amzn1.echo-api.session.f785a39e-8ccc-43dd-9844-ffde6390a85a",
+    "application": {
+      "applicationId": "amzn1.ask.skill.028ef8b0-b7cd-45e7-bc9c-08a4a213921e"
+    },
+    "user": {
+      "userId": "amzn1.ask.account.TEST_USER"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "amzn1.echo-api.request.e048dafa-4f6a-4393-b178-ed6a42d4a510",
+    "timestamp": "2024-11-26T17:06:06.795404",
+    "locale": "es-ES",
+    "intent": {
+      "name": "DelegarAccesoIntent",
+      "slots": {
+        "Aprendiz": {
+          "name": "Aprendiz",
+          "value": "Ana"
+        },
+        "Permiso": {
+          "name": "Permiso",
+          "value": "consultar pacientes"
+        }
+      }
+    }
+  }
+}

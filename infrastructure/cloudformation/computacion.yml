@@ -1,0 +1,75 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: "Componentes de computación para el Sistema de Terapias"
+
+Resources:
+  TablaTerapias:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: Terapias
+      AttributeDefinitions:
+        - AttributeName: IDTerapia
+          AttributeType: S
+        - AttributeName: IDPaciente
+          AttributeType: S
+      KeySchema:
+        - AttributeName: IDTerapia
+          KeyType: HASH
+      GlobalSecondaryIndexes:
+        - IndexName: IndiceIDPaciente
+          KeySchema:
+            - AttributeName: IDPaciente
+              KeyType: HASH
+          Projection:
+            ProjectionType: ALL
+      BillingMode: PAY_PER_REQUEST
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
+
+  RolEjecucionLambda:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: RolSistemaTerapias
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: 'sts:AssumeRole'
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: PoliticaSistemaTerapias
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - logs:CreateLogGroup
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                  - dynamodb:GetItem
+                  - dynamodb:PutItem
+                  - dynamodb:Query
+                  - dynamodb:Scan
+                Resource: 
+                  - !Sub "arn:aws:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/lambda/SistemaTerapias:*"
+                  - !GetAtt TablaTerapias.Arn
+                  - !Join ["", [!GetAtt TablaTerapias.Arn, "/index/*"]]
+
+  FuncionLambda:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: sistema-terapias-v2
+      Handler: index.handler
+      Role: !GetAtt RolEjecucionLambda.Arn
+      Code:
+        ZipFile: |
+          # Código será desplegado separadamente
+      Runtime: python3.9
+      MemorySize: 128
+      Timeout: 10
+      Environment:
+        Variables:
+          TABLA_TERAPIAS: !Ref TablaTerapias

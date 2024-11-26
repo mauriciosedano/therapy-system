@@ -1,0 +1,51 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: "Almacenamiento para el Sistema de Terapias"
+
+Resources:
+  TablaPacientes:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: Pacientes
+      AttributeDefinitions:
+        - AttributeName: IDPaciente
+          AttributeType: S
+        - AttributeName: Nombre
+          AttributeType: S
+      KeySchema:
+        - AttributeName: IDPaciente
+          KeyType: HASH
+      GlobalSecondaryIndexes:
+        - IndexName: IndiceNombre
+          KeySchema:
+            - AttributeName: Nombre
+              KeyType: HASH
+          Projection:
+            ProjectionType: ALL
+      BillingMode: PAY_PER_REQUEST
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
+
+  TablaTerapias:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: Terapias
+      AttributeDefinitions:
+        - AttributeName: IDTerapia
+          AttributeType: S
+        - AttributeName: IDPaciente
+          AttributeType: S
+      KeySchema:
+        - AttributeName: IDTerapia
+          KeyType: HASH
+      GlobalSecondaryIndexes:
+        - IndexName: IndiceIDPaciente
+          KeySchema:
+            - AttributeName: IDPaciente
+              KeyType: HASH
+          Projection:
+            ProjectionType: ALL
+      BillingMode: PAY_PER_REQUEST
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1

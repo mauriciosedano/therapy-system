@@ -1,0 +1,48 @@
+{
+    "testCases": [
+        {
+            "description": "Delegación de acceso",
+            "utterances": [
+                {
+                    "input": "permite a Ana consultar pacientes",
+                    "expectedResponse": "He autorizado a Ana para consultar pacientes"
+                },
+                {
+                    "input": "autoriza a Ana para registrar terapias",
+                    "expectedResponse": "He autorizado a Ana para registrar terapias"
+                }
+            ]
+        },
+        {
+            "description": "Consulta de acciones",
+            "utterances": [
+                {
+                    "input": "muestra las acciones de Ana",
+                    "expectedResponse": "Ana ha realizado"
+                },
+                {
+                    "input": "qué ha hecho Ana hoy",
+                    "expectedResponse": "acciones"
+                }
+            ]
+        },
+        {
+            "description": "Gestión de pacientes",
+            "utterances": [
+                {
+                    "input": "registra un nuevo paciente llamado María López con teléfono 555-123-4567",
+                    "expectedResponse": "Paciente María López registrado exitosamente"
+                }
+            ]
+        },
+        {
+            "description": "Registro de terapias",
+            "utterances": [
+                {
+                    "input": "registra una terapia de Acupuntura para María López",
+                    "expectedResponse": "He registrado la terapia de Acupuntura para María López"
+                }
+            ]
+        }
+    ]
+}

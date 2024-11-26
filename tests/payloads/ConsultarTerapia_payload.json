@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "session": {
+    "new": true,
+    "sessionId": "amzn1.echo-api.session.413a5338-4eb6-4fe1-9078-2fbc30eebada",
+    "application": {
+      "applicationId": "amzn1.ask.skill.028ef8b0-b7cd-45e7-bc9c-08a4a213921e"
+    },
+    "user": {
+      "userId": "amzn1.ask.account.TEST_USER"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "amzn1.echo-api.request.d78f9873-b67f-46de-a93b-0b81cd18b395",
+    "timestamp": "2024-11-26T17:06:06.798351",
+    "locale": "es-ES",
+    "intent": {
+      "name": "ConsultarTerapiaIntent",
+      "slots": {
+        "Paciente": {
+          "name": "Paciente",
+          "value": "Mar\u00eda L\u00f3pez"
+        }
+      }
+    }
+  }
+}

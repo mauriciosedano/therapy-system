@@ -1,0 +1,349 @@
+2024-11-26 11:44:16,508 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-26 11:44:16,734 [INFO] 🚀 Iniciando pruebas de integración de Alexa
+2024-11-26 11:44:16,735 [INFO] ✨ Pruebas completadas. Resultados guardados en tests/results/alexa_integration_20241126_114416.json
+2024-11-26 11:44:16,735 [INFO] 📊 Resumen de pruebas:
+2024-11-26 11:44:16,735 [INFO]    Total: 0
+2024-11-26 11:44:16,735 [INFO]    Exitosas: 0
+2024-11-26 11:44:16,735 [INFO]    Fallidas: 0
+2024-11-26 11:44:17,250 [INFO] ✅ Tabla AccessDelegation: 1 registros encontrados
+2024-11-26 11:44:17,379 [INFO] ✅ Tabla AuditLog: 1 registros encontrados
+2024-11-26 11:44:17,517 [INFO] ✅ Tabla Patients: 1 registros encontrados
+2024-11-26 11:44:17,650 [INFO] ✅ Tabla Therapies: 1 registros encontrados
+2024-11-26 11:45:45,755 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-26 11:45:45,899 [INFO] 🚀 Iniciando pruebas de integración de Alexa
+2024-11-26 11:45:45,900 [INFO] ✨ Pruebas completadas. Resultados guardados en tests/results/alexa_integration_20241126_114545.json
+2024-11-26 11:45:45,900 [INFO] 📊 Resumen de pruebas:
+2024-11-26 11:45:45,900 [INFO]    Total: 0
+2024-11-26 11:45:45,900 [INFO]    Exitosas: 0
+2024-11-26 11:45:45,901 [INFO]    Fallidas: 0
+2024-11-26 11:45:46,377 [INFO] ✅ Tabla AccessDelegation: 1 registros encontrados
+2024-11-26 11:45:46,500 [INFO] ✅ Tabla AuditLog: 1 registros encontrados
+2024-11-26 11:45:46,627 [INFO] ✅ Tabla Patients: 1 registros encontrados
+2024-11-26 11:45:46,743 [INFO] ✅ Tabla Therapies: 1 registros encontrados
+2024-11-26 11:47:41,306 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-26 11:47:41,467 [INFO] 🚀 Iniciando pruebas de integración de Alexa
+2024-11-26 11:47:41,468 [INFO] Probando intent: ConsultarAccionesAprendizIntent
+2024-11-26 11:47:43,411 [ERROR] ❌ Intent ConsultarAccionesAprendizIntent falló: Formato de respuesta inválido
+2024-11-26 11:47:43,411 [INFO] Probando intent: ConsultarTerapiaIntent
+2024-11-26 11:47:44,948 [ERROR] ❌ Intent ConsultarTerapiaIntent falló: Formato de respuesta inválido
+2024-11-26 11:47:44,949 [INFO] Probando intent: DelegarAccesoIntent
+2024-11-26 11:47:46,263 [ERROR] ❌ Intent DelegarAccesoIntent falló: Formato de respuesta inválido
+2024-11-26 11:47:46,263 [INFO] Probando intent: RegistrarTerapiaIntent
+2024-11-26 11:47:47,574 [ERROR] ❌ Intent RegistrarTerapiaIntent falló: Formato de respuesta inválido
+2024-11-26 11:47:47,574 [INFO] Probando intent: RegistrarPacienteIntent
+2024-11-26 11:47:48,838 [ERROR] ❌ Intent RegistrarPacienteIntent falló: Formato de respuesta inválido
+2024-11-26 11:47:48,839 [INFO] ✨ Pruebas completadas. Resultados guardados en tests/results/alexa_integration_20241126_114748.json
+2024-11-26 11:47:48,840 [INFO] 📊 Resumen de pruebas:
+2024-11-26 11:47:48,840 [INFO]    Total: 5
+2024-11-26 11:47:48,840 [INFO]    Exitosas: 0
+2024-11-26 11:47:48,840 [INFO]    Fallidas: 5
+2024-11-26 11:47:49,312 [INFO] ✅ Tabla AccessDelegation: 1 registros encontrados
+2024-11-26 11:47:49,436 [INFO] ✅ Tabla AuditLog: 1 registros encontrados
+2024-11-26 11:47:49,556 [INFO] ✅ Tabla Patients: 1 registros encontrados
+2024-11-26 11:47:49,674 [INFO] ✅ Tabla Therapies: 1 registros encontrados
+2024-11-26 11:55:32,586 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-26 11:55:32,726 [INFO] 🚀 Iniciando pruebas de integración de Alexa
+2024-11-26 11:55:32,727 [INFO] Probando intent: ConsultarAccionesAprendizIntent
+2024-11-26 11:55:34,689 [ERROR] ❌ Intent ConsultarAccionesAprendizIntent falló: Formato de respuesta inválido
+2024-11-26 11:55:34,689 [INFO] Probando intent: ConsultarTerapiaIntent
+2024-11-26 11:55:36,283 [ERROR] ❌ Intent ConsultarTerapiaIntent falló: Formato de respuesta inválido
+2024-11-26 11:55:36,284 [INFO] Probando intent: DelegarAccesoIntent
+2024-11-26 11:55:37,716 [ERROR] ❌ Intent DelegarAccesoIntent falló: Formato de respuesta inválido
+2024-11-26 11:55:37,716 [INFO] Probando intent: RegistrarTerapiaIntent
+2024-11-26 11:55:39,047 [ERROR] ❌ Intent RegistrarTerapiaIntent falló: Formato de respuesta inválido
+2024-11-26 11:55:39,048 [INFO] Probando intent: RegistrarPacienteIntent
+2024-11-26 11:55:40,494 [ERROR] ❌ Intent RegistrarPacienteIntent falló: Formato de respuesta inválido
+2024-11-26 11:55:40,495 [INFO] ✨ Pruebas completadas. Resultados guardados en tests/results/alexa_integration_20241126_115540.json
+2024-11-26 11:55:40,495 [INFO] 📊 Resumen de pruebas:
+2024-11-26 11:55:40,495 [INFO]    Total: 5
+2024-11-26 11:55:40,496 [INFO]    Exitosas: 0
+2024-11-26 11:55:40,497 [INFO]    Fallidas: 5
+2024-11-26 11:55:41,066 [INFO] ✅ Tabla AccessDelegation: 1 registros encontrados
+2024-11-26 11:55:41,193 [INFO] ✅ Tabla AuditLog: 1 registros encontrados
+2024-11-26 11:55:41,324 [INFO] ✅ Tabla Patients: 1 registros encontrados
+2024-11-26 11:55:41,452 [INFO] ✅ Tabla Therapies: 1 registros encontrados
+2024-11-26 11:58:25,963 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-26 11:58:26,123 [INFO] 🚀 Iniciando pruebas de integración de Alexa
+2024-11-26 11:58:26,124 [INFO] Probando intent: ConsultarAccionesAprendizIntent
+2024-11-26 11:58:27,801 [INFO] Respuesta recibida: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 11:58:27,801 [ERROR] ❌ Error probando ConsultarAcciones_payload.json: Falta 'response' en la respuesta: {'errorMessage': "Unable to import module 'index': No module named 'handlers'", 'errorType': 'Runtime.ImportModuleError', 'requestId': '', 'stackTrace': []}
+2024-11-26 11:58:27,802 [ERROR] Respuesta cruda: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 11:58:27,802 [INFO] Probando intent: ConsultarTerapiaIntent
+2024-11-26 11:58:29,231 [INFO] Respuesta recibida: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 11:58:29,232 [ERROR] ❌ Error probando ConsultarTerapia_payload.json: Falta 'response' en la respuesta: {'errorMessage': "Unable to import module 'index': No module named 'handlers'", 'errorType': 'Runtime.ImportModuleError', 'requestId': '', 'stackTrace': []}
+2024-11-26 11:58:29,232 [ERROR] Respuesta cruda: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 11:58:29,232 [INFO] Probando intent: DelegarAccesoIntent
+2024-11-26 11:58:30,870 [INFO] Respuesta recibida: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 11:58:30,870 [ERROR] ❌ Error probando DelegarAcceso_payload.json: Falta 'response' en la respuesta: {'errorMessage': "Unable to import module 'index': No module named 'handlers'", 'errorType': 'Runtime.ImportModuleError', 'requestId': '', 'stackTrace': []}
+2024-11-26 11:58:30,871 [ERROR] Respuesta cruda: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 11:58:30,871 [INFO] Probando intent: RegistrarTerapiaIntent
+2024-11-26 11:58:32,306 [INFO] Respuesta recibida: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 11:58:32,306 [ERROR] ❌ Error probando RegistrarTerapia_payload.json: Falta 'response' en la respuesta: {'errorMessage': "Unable to import module 'index': No module named 'handlers'", 'errorType': 'Runtime.ImportModuleError', 'requestId': '', 'stackTrace': []}
+2024-11-26 11:58:32,306 [ERROR] Respuesta cruda: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 11:58:32,307 [INFO] Probando intent: RegistrarPacienteIntent
+2024-11-26 11:58:33,623 [INFO] Respuesta recibida: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 11:58:33,624 [ERROR] ❌ Error probando RegistrarPaciente_payload.json: Falta 'response' en la respuesta: {'errorMessage': "Unable to import module 'index': No module named 'handlers'", 'errorType': 'Runtime.ImportModuleError', 'requestId': '', 'stackTrace': []}
+2024-11-26 11:58:33,624 [ERROR] Respuesta cruda: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 11:58:33,625 [INFO] 📊 Resumen de pruebas:
+2024-11-26 11:58:33,625 [INFO]    Total: 5
+2024-11-26 11:58:33,625 [INFO]    Exitosas: 0
+2024-11-26 11:58:33,625 [INFO]    Fallidas: 5
+2024-11-26 11:58:34,137 [INFO] ✅ Tabla AccessDelegation: 1 registros encontrados
+2024-11-26 11:58:34,276 [INFO] ✅ Tabla AuditLog: 1 registros encontrados
+2024-11-26 11:58:34,409 [INFO] ✅ Tabla Patients: 1 registros encontrados
+2024-11-26 11:58:34,550 [INFO] ✅ Tabla Therapies: 1 registros encontrados
+2024-11-26 12:02:30,985 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-26 12:02:31,079 [INFO] 🚀 Iniciando pruebas de integración de Alexa
+2024-11-26 12:02:31,079 [INFO] Probando intent: ConsultarAccionesAprendizIntent
+2024-11-26 12:02:33,105 [INFO] Respuesta recibida: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers.intent_handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 12:02:33,107 [ERROR] ❌ Error probando ConsultarAcciones_payload.json: Falta 'response' en la respuesta: {'errorMessage': "Unable to import module 'index': No module named 'handlers.intent_handlers'", 'errorType': 'Runtime.ImportModuleError', 'requestId': '', 'stackTrace': []}
+2024-11-26 12:02:33,107 [ERROR] Respuesta cruda: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers.intent_handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 12:02:33,108 [INFO] Probando intent: ConsultarTerapiaIntent
+2024-11-26 12:02:34,678 [INFO] Respuesta recibida: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers.intent_handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 12:02:34,678 [ERROR] ❌ Error probando ConsultarTerapia_payload.json: Falta 'response' en la respuesta: {'errorMessage': "Unable to import module 'index': No module named 'handlers.intent_handlers'", 'errorType': 'Runtime.ImportModuleError', 'requestId': '', 'stackTrace': []}
+2024-11-26 12:02:34,678 [ERROR] Respuesta cruda: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers.intent_handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 12:02:34,679 [INFO] Probando intent: DelegarAccesoIntent
+2024-11-26 12:02:36,034 [INFO] Respuesta recibida: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers.intent_handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 12:02:36,034 [ERROR] ❌ Error probando DelegarAcceso_payload.json: Falta 'response' en la respuesta: {'errorMessage': "Unable to import module 'index': No module named 'handlers.intent_handlers'", 'errorType': 'Runtime.ImportModuleError', 'requestId': '', 'stackTrace': []}
+2024-11-26 12:02:36,035 [ERROR] Respuesta cruda: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers.intent_handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 12:02:36,036 [INFO] Probando intent: RegistrarTerapiaIntent
+2024-11-26 12:02:37,442 [INFO] Respuesta recibida: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers.intent_handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 12:02:37,443 [ERROR] ❌ Error probando RegistrarTerapia_payload.json: Falta 'response' en la respuesta: {'errorMessage': "Unable to import module 'index': No module named 'handlers.intent_handlers'", 'errorType': 'Runtime.ImportModuleError', 'requestId': '', 'stackTrace': []}
+2024-11-26 12:02:37,443 [ERROR] Respuesta cruda: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers.intent_handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 12:02:37,443 [INFO] Probando intent: RegistrarPacienteIntent
+2024-11-26 12:02:38,877 [INFO] Respuesta recibida: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers.intent_handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 12:02:38,877 [ERROR] ❌ Error probando RegistrarPaciente_payload.json: Falta 'response' en la respuesta: {'errorMessage': "Unable to import module 'index': No module named 'handlers.intent_handlers'", 'errorType': 'Runtime.ImportModuleError', 'requestId': '', 'stackTrace': []}
+2024-11-26 12:02:38,877 [ERROR] Respuesta cruda: {
+  "errorMessage": "Unable to import module 'index': No module named 'handlers.intent_handlers'",
+  "errorType": "Runtime.ImportModuleError",
+  "requestId": "",
+  "stackTrace": []
+}
+2024-11-26 12:02:38,878 [INFO] 📊 Resumen de pruebas:
+2024-11-26 12:02:38,879 [INFO]    Total: 5
+2024-11-26 12:02:38,879 [INFO]    Exitosas: 0
+2024-11-26 12:02:38,879 [INFO]    Fallidas: 5
+2024-11-26 12:02:39,346 [INFO] ✅ Tabla AccessDelegation: 1 registros encontrados
+2024-11-26 12:02:39,480 [INFO] ✅ Tabla AuditLog: 1 registros encontrados
+2024-11-26 12:02:39,610 [INFO] ✅ Tabla Patients: 1 registros encontrados
+2024-11-26 12:02:39,731 [INFO] ✅ Tabla Therapies: 1 registros encontrados
+2024-11-26 12:06:07,282 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-26 12:06:07,419 [INFO] 🚀 Iniciando pruebas de integración de Alexa
+2024-11-26 12:06:07,421 [INFO] Probando intent: ConsultarAccionesAprendizIntent
+2024-11-26 12:06:08,762 [INFO] Respuesta recibida: {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "No encontr\u00e9 acciones registradas para Ana"
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "\u00bfHay algo m\u00e1s en lo que pueda ayudarte?"
+      }
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Consulta de Acciones",
+      "content": "No encontr\u00e9 acciones registradas para Ana"
+    }
+  }
+}
+2024-11-26 12:06:08,762 [INFO] ✅ Intent ConsultarAccionesAprendizIntent pasó la prueba
+2024-11-26 12:06:08,763 [INFO] Probando intent: ConsultarTerapiaIntent
+2024-11-26 12:06:08,931 [INFO] Respuesta recibida: {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "Hubo un error consultando las terapias. Por favor, intenta nuevamente."
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "\u00bfHay algo m\u00e1s en lo que pueda ayudarte?"
+      }
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Error",
+      "content": "Hubo un error consultando las terapias. Por favor, intenta nuevamente."
+    }
+  }
+}
+2024-11-26 12:06:08,931 [INFO] ✅ Intent ConsultarTerapiaIntent pasó la prueba
+2024-11-26 12:06:08,932 [INFO] Probando intent: DelegarAccesoIntent
+2024-11-26 12:06:09,098 [INFO] Respuesta recibida: {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "He autorizado a Ana para consultar pacientes"
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "\u00bfHay algo m\u00e1s en lo que pueda ayudarte?"
+      }
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Delegaci\u00f3n de Acceso",
+      "content": "He autorizado a Ana para consultar pacientes"
+    }
+  }
+}
+2024-11-26 12:06:09,099 [INFO] ✅ Intent DelegarAccesoIntent pasó la prueba
+2024-11-26 12:06:09,099 [INFO] Probando intent: RegistrarTerapiaIntent
+2024-11-26 12:06:09,258 [INFO] Respuesta recibida: {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "He registrado la terapia de Acupuntura para Mar\u00eda L\u00f3pez"
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "\u00bfHay algo m\u00e1s en lo que pueda ayudarte?"
+      }
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Registro de Terapia",
+      "content": "He registrado la terapia de Acupuntura para Mar\u00eda L\u00f3pez"
+    }
+  }
+}
+2024-11-26 12:06:09,258 [INFO] ✅ Intent RegistrarTerapiaIntent pasó la prueba
+2024-11-26 12:06:09,258 [INFO] Probando intent: RegistrarPacienteIntent
+2024-11-26 12:06:09,420 [INFO] Respuesta recibida: {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "He registrado al paciente Mar\u00eda L\u00f3pez con tel\u00e9fono 555-123-4567"
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "\u00bfHay algo m\u00e1s en lo que pueda ayudarte?"
+      }
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Registro de Paciente",
+      "content": "He registrado al paciente Mar\u00eda L\u00f3pez con tel\u00e9fono 555-123-4567"
+    }
+  }
+}
+2024-11-26 12:06:09,420 [INFO] ✅ Intent RegistrarPacienteIntent pasó la prueba
+2024-11-26 12:06:09,422 [INFO] 📊 Resumen de pruebas:
+2024-11-26 12:06:09,422 [INFO]    Total: 5
+2024-11-26 12:06:09,422 [INFO]    Exitosas: 5
+2024-11-26 12:06:09,422 [INFO]    Fallidas: 0
+2024-11-26 12:06:09,926 [INFO] ✅ Tabla AccessDelegation: 1 registros encontrados
+2024-11-26 12:06:10,061 [INFO] ✅ Tabla AuditLog: 1 registros encontrados
+2024-11-26 12:06:10,189 [INFO] ✅ Tabla Patients: 1 registros encontrados
+2024-11-26 12:06:10,323 [INFO] ✅ Tabla Therapies: 1 registros encontrados

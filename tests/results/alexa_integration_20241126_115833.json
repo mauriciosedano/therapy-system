@@ -1,0 +1,62 @@
+[
+  {
+    "intent": "ConsultarAcciones_payload.json",
+    "status": "FAIL",
+    "error": "Falta 'response' en la respuesta: {'errorMessage': \"Unable to import module 'index': No module named 'handlers'\", 'errorType': 'Runtime.ImportModuleError', 'requestId': '', 'stackTrace': []}",
+    "raw_response": {
+      "errorMessage": "Unable to import module 'index': No module named 'handlers'",
+      "errorType": "Runtime.ImportModuleError",
+      "requestId": "",
+      "stackTrace": []
+    },
+    "timestamp": "2024-11-26T11:58:27.801759"
+  },
+  {
+    "intent": "ConsultarTerapia_payload.json",
+    "status": "FAIL",
+    "error": "Falta 'response' en la respuesta: {'errorMessage': \"Unable to import module 'index': No module named 'handlers'\", 'errorType': 'Runtime.ImportModuleError', 'requestId': '', 'stackTrace': []}",
+    "raw_response": {
+      "errorMessage": "Unable to import module 'index': No module named 'handlers'",
+      "errorType": "Runtime.ImportModuleError",
+      "requestId": "",
+      "stackTrace": []
+    },
+    "timestamp": "2024-11-26T11:58:29.231987"
+  },
+  {
+    "intent": "DelegarAcceso_payload.json",
+    "status": "FAIL",
+    "error": "Falta 'response' en la respuesta: {'errorMessage': \"Unable to import module 'index': No module named 'handlers'\", 'errorType': 'Runtime.ImportModuleError', 'requestId': '', 'stackTrace': []}",
+    "raw_response": {
+      "errorMessage": "Unable to import module 'index': No module named 'handlers'",
+      "errorType": "Runtime.ImportModuleError",
+      "requestId": "",
+      "stackTrace": []
+    },
+    "timestamp": "2024-11-26T11:58:30.870724"
+  },
+  {
+    "intent": "RegistrarTerapia_payload.json",
+    "status": "FAIL",
+    "error": "Falta 'response' en la respuesta: {'errorMessage': \"Unable to import module 'index': No module named 'handlers'\", 'errorType': 'Runtime.ImportModuleError', 'requestId': '', 'stackTrace': []}",
+    "raw_response": {
+      "errorMessage": "Unable to import module 'index': No module named 'handlers'",
+      "errorType": "Runtime.ImportModuleError",
+      "requestId": "",
+      "stackTrace": []
+    },
+    "timestamp": "2024-11-26T11:58:32.306390"
+  },
+  {
+    "intent": "RegistrarPaciente_payload.json",
+    "status": "FAIL",
+    "error": "Falta 'response' en la respuesta: {'errorMessage': \"Unable to import module 'index': No module named 'handlers'\", 'errorType': 'Runtime.ImportModuleError', 'requestId': '', 'stackTrace': []}",
+    "raw_response": {
+      "errorMessage": "Unable to import module 'index': No module named 'handlers'",
+      "errorType": "Runtime.ImportModuleError",
+      "requestId": "",
+      "stackTrace": []
+    },
+    "timestamp": "2024-11-26T11:58:33.624156"
+  }
+]

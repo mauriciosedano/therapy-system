@@ -1,0 +1,396 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "terapias homeopáticas",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RegistrarPacienteIntent",
+                    "slots": [
+                        {
+                            "name": "Nombre",
+                            "type": "AMAZON.Person",
+                            "samples": [
+                                "se llama {Nombre}",
+                                "el nombre es {Nombre}",
+                                "{Nombre}"
+                            ]
+                        },
+                        {
+                            "name": "Telefono",
+                            "type": "AMAZON.PhoneNumber",
+                            "samples": [
+                                "su teléfono es {Telefono}",
+                                "el número es {Telefono}",
+                                "{Telefono}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "registra un nuevo paciente llamado {Nombre} con teléfono {Telefono}",
+                        "dar de alta a {Nombre} con teléfono {Telefono}",
+                        "añadir paciente {Nombre} teléfono {Telefono}",
+                        "registrar a {Nombre} con número {Telefono}",
+                        "nuevo paciente {Nombre} teléfono {Telefono}",
+                        "registrar paciente {Nombre} con teléfono {Telefono}"
+                    ]
+                },
+                {
+                    "name": "RegistrarTerapiaIntent",
+                    "slots": [
+                        {
+                            "name": "Paciente",
+                            "type": "AMAZON.Person"
+                        },
+                        {
+                            "name": "TipoTerapia",
+                            "type": "TerapiaType"
+                        },
+                        {
+                            "name": "Fecha",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "registra una terapia de {TipoTerapia} para {Paciente} el {Fecha}",
+                        "añade terapia {TipoTerapia} para {Paciente}",
+                        "nueva sesión de {TipoTerapia} para {Paciente}",
+                        "registra sesión de {TipoTerapia} para {Paciente} el {Fecha}",
+                        "anota terapia {TipoTerapia} para {Paciente}"
+                    ]
+                },
+                {
+                    "name": "ConsultarTerapiaIntent",
+                    "slots": [
+                        {
+                            "name": "Paciente",
+                            "type": "AMAZON.Person"
+                        }
+                    ],
+                    "samples": [
+                        "consulta las terapias de {Paciente}",
+                        "busca las terapias de {Paciente}",
+                        "qué terapias tiene {Paciente}",
+                        "muestra las terapias de {Paciente}",
+                        "ver terapias de {Paciente}"
+                    ]
+                },
+                {
+                    "name": "ConsultarHistorialIntent",
+                    "slots": [
+                        {
+                            "name": "Paciente",
+                            "type": "AMAZON.Person"
+                        },
+                        {
+                            "name": "FechaInicio",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "FechaFin",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "muestra el historial de {Paciente}",
+                        "consulta las terapias de {Paciente} entre {FechaInicio} y {FechaFin}",
+                        "qué terapias recibió {Paciente}",
+                        "busca terapias de {Paciente} desde {FechaInicio} hasta {FechaFin}",
+                        "historial de {Paciente}"
+                    ]
+                },
+                {
+                    "name": "RegistrarFormulaIntent",
+                    "slots": [
+                        {
+                            "name": "Paciente",
+                            "type": "AMAZON.Person"
+                        },
+                        {
+                            "name": "TipoFormula",
+                            "type": "FormulaType"
+                        }
+                    ],
+                    "samples": [
+                        "registra una fórmula de {TipoFormula} para {Paciente}",
+                        "añade {TipoFormula} para {Paciente}",
+                        "nueva fórmula de {TipoFormula} para {Paciente}",
+                        "prepara {TipoFormula} para {Paciente}",
+                        "elabora una fórmula de {TipoFormula} para {Paciente}"
+                    ]
+                },
+                {
+                    "name": "DelegarAccesoIntent",
+                    "slots": [
+                        {
+                            "name": "Aprendiz",
+                            "type": "AMAZON.Person"
+                        },
+                        {
+                            "name": "Permiso",
+                            "type": "PermisoType"
+                        },
+                        {
+                            "name": "FechaExpiracion",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "permite a {Aprendiz} {Permiso}",
+                        "autoriza a {Aprendiz} para {Permiso}",
+                        "da acceso a {Aprendiz} para {Permiso}",
+                        "otorga permiso a {Aprendiz} para {Permiso} hasta {FechaExpiracion}",
+                        "delega {Permiso} a {Aprendiz}"
+                    ]
+                },
+                {
+                    "name": "ConsultarAccionesAprendizIntent",
+                    "slots": [
+                        {
+                            "name": "Aprendiz",
+                            "type": "AMAZON.Person"
+                        },
+                        {
+                            "name": "FechaInicio",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "FechaFin",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "qué ha hecho {Aprendiz}",
+                        "muestra las acciones de {Aprendiz}",
+                        "consulta qué hizo {Aprendiz}",
+                        "revisa las acciones de {Aprendiz} desde {FechaInicio}",
+                        "muestra el historial de {Aprendiz} entre {FechaInicio} y {FechaFin}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "TerapiaType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Homeopatía"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Moxibustión"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Acupuntura"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Flores de Bach"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "FormulaType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Arnica Montana"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Belladona"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Calendula"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Chamomilla"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rescue Remedy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star of Bethlehem"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "PermisoType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "consultar pacientes",
+                                "synonyms": ["ver pacientes", "revisar pacientes"]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "registrar terapias",
+                                "synonyms": ["anotar terapias", "guardar terapias"]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "consultar fórmulas",
+                                "synonyms": ["ver fórmulas", "revisar fórmulas"]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "RegistrarPacienteIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.RegistrarPacienteIntent"
+                    },
+                    "slots": [
+                        {
+                            "name": "Nombre",
+                            "elicitationRequired": true,
+                            "confirmationRequired": false,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.Nombre"
+                            }
+                        },
+                        {
+                            "name": "Telefono",
+                            "elicitationRequired": true,
+                            "confirmationRequired": false,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.Telefono"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "RegistrarTerapiaIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.RegistrarTerapiaIntent"
+                    },
+                    "slots": [
+                        {
+                            "name": "Paciente",
+                            "elicitationRequired": true,
+                            "confirmationRequired": false,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.Paciente"
+                            }
+                        },
+                        {
+                            "name": "TipoTerapia",
+                            "elicitationRequired": true,
+                            "confirmationRequired": false,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.TipoTerapia"
+                            }
+                        },
+                        {
+                            "name": "Fecha",
+                            "elicitationRequired": true,
+                            "confirmationRequired": false,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.Fecha"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.Nombre",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Cuál es el nombre del paciente?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.Telefono",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Cuál es el número de teléfono?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.Paciente",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Para qué paciente es la terapia?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.TipoTerapia",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Qué tipo de terapia deseas registrar?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.Fecha",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Para qué fecha es la terapia?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.RegistrarPacienteIntent",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Confirmas el registro del paciente {Nombre} con teléfono {Telefono}?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.RegistrarTerapiaIntent",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Confirmas registrar una terapia de {TipoTerapia} para {Paciente} el {Fecha}?"
+                    }
+                ]
+            }
+        ]
+    }
+}

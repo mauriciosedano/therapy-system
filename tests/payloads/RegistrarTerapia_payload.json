@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "session": {
+    "new": true,
+    "sessionId": "amzn1.echo-api.session.bf92fdf4-e0de-46d1-a0b8-3fa359e1c83a",
+    "application": {
+      "applicationId": "amzn1.ask.skill.028ef8b0-b7cd-45e7-bc9c-08a4a213921e"
+    },
+    "user": {
+      "userId": "amzn1.ask.account.TEST_USER"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "amzn1.echo-api.request.5c0ed223-f569-4bf7-a5ed-09e8116424ea",
+    "timestamp": "2024-11-26T17:06:06.797755",
+    "locale": "es-ES",
+    "intent": {
+      "name": "RegistrarTerapiaIntent",
+      "slots": {
+        "Paciente": {
+          "name": "Paciente",
+          "value": "Mar\u00eda L\u00f3pez"
+        },
+        "TipoTerapia": {
+          "name": "TipoTerapia",
+          "value": "Acupuntura"
+        },
+        "Fecha": {
+          "name": "Fecha",
+          "value": "2024-11-26"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+    "name": "DelegarAccesoIntent",
+    "slots": [
+        {
+            "name": "Aprendiz",
+            "type": "AMAZON.Person"
+        },
+        {
+            "name": "Permiso",
+            "type": "PermisoType"
+        },
+        {
+            "name": "FechaExpiracion",
+            "type": "AMAZON.DATE"
+        }
+    ],
+    "samples": [
+        "permite a {Aprendiz} {Permiso}",
+        "autoriza a {Aprendiz} para {Permiso}",
+        "da acceso a {Aprendiz} para {Permiso}",
+        "otorga permiso a {Aprendiz} para {Permiso} hasta {FechaExpiracion}",
+        "delega {Permiso} a {Aprendiz}"
+    ]
+},
+{
+    "name": "ConsultarAccionesAprendizIntent",
+    "slots": [
+        {
+            "name": "Aprendiz",
+            "type": "AMAZON.Person"
+        },
+        {
+            "name": "FechaInicio",
+            "type": "AMAZON.DATE"
+        },
+        {
+            "name": "FechaFin",
+            "type": "AMAZON.DATE"
+        }
+    ],
+    "samples": [
+        "qué ha hecho {Aprendiz}",
+        "muestra las acciones de {Aprendiz}",
+        "consulta qué hizo {Aprendiz}",
+        "revisa las acciones de {Aprendiz} desde {FechaInicio}",
+        "muestra el historial de {Aprendiz} entre {FechaInicio} y {FechaFin}"
+    ]
+}

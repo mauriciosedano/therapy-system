@@ -1,84 +1,72 @@
-# docs/architecture/system-architecture.md
+# docs/architecture/arquitectura-sistema.md
 
 # Arquitectura del Sistema de Terapias Homeopáticas
 
-## Visión General
+## 1. Visión General
 
-El sistema está construido sobre AWS, utilizando servicios serverless para maximizar la escalabilidad y minimizar los costos operativos. La interacción principal se realiza a través de Alexa, permitiendo un control por voz natural e intuitivo.
+El sistema está construido sobre AWS, utilizando servicios serverless para maximizar escalabilidad y minimizar costos operativos. La interacción principal se realiza a través de Alexa, permitiendo un control por voz natural e intuitivo.
 
-## Componentes Principales
+## 2. Componentes Principales
 
-### 1. Interfaz de Usuario (Alexa Skill)
+### 2.1 Interfaz de Usuario (Alexa Skill)
 - **Invocación**: "Alexa, abre terapias homeopáticas"
 - **Intents Principales**:
+  ```
   - Registro de pacientes y terapias
   - Consulta de historiales
   - Gestión de fórmulas
   - Delegación de accesos
+  ```
 
-### 2. Backend (AWS Lambda)
+### 2.2 Backend (AWS Lambda)
 - **Funciones Core**:
+  ```
   - Procesamiento de intents
   - Validación de datos
   - Gestión de sesiones
   - Control de acceso
-
-### 3. Base de Datos (DynamoDB)
-- **Tablas Principales**:
-  ```
-  Patients
-  ├── PatientID (PK)
-  ├── Name
-  ├── Phone
-  ├── RegisterDate
-  └── LastUpdate
-
-  Therapies
-  ├── TherapyID (PK)
-  ├── PatientID (SK)
-  ├── Type
-  ├── Date
-  └── Observations
-
-  Formulas
-  ├── FormulaID (PK)
-  ├── Name
-  ├── Components
-  └── Instructions
   ```
 
-## Flujos de Interacción
+### 2.3 Base de Datos (DynamoDB)
+```
+Patients
+├── PatientID (PK)
+├── Name
+├── Phone
+├── RegisterDate
+└── LastUpdate
 
-### 1. Registro de Terapia
-```mermaid
-sequenceDiagram
-    participant Alexa
-    participant Lambda
-    participant DynamoDB
-    
-    Alexa->>Lambda: Intent: RegistrarTerapia
-    Lambda->>DynamoDB: Validar Paciente
-    DynamoDB-->>Lambda: Datos Paciente
-    Lambda->>DynamoDB: Guardar Terapia
-    Lambda-->>Alexa: Confirmar Registro
+Therapies
+├── TherapyID (PK)
+├── PatientID (SK)
+├── Type
+├── Date
+└── Observations
+
+Formulas
+├── FormulaID (PK)
+├── Name
+├── Components
+└── Instructions
 ```
 
-### 2. Delegación de Acceso
-```mermaid
-sequenceDiagram
-    participant Master
-    participant Alexa
-    participant Lambda
-    
-    Master->>Alexa: "Permite a Ana consultar"
-    Alexa->>Lambda: Intent: DelegarAcceso
-    Lambda->>Lambda: Validar Permisos
-    Lambda-->>Alexa: Confirmar Delegación
-```
+## 3. Flujos de Interacción
 
-## Seguridad y Permisos
+### 3.1 Registro de Terapia
+- Usuario dice: "Registra terapia para Juan"
+- Alexa procesa intent y solicita tipo de terapia
+- Lambda valida datos y registra en DynamoDB
+- Alexa confirma el registro
 
-### Niveles de Acceso
+### 3.2 Delegación de Acceso
+- Maestro solicita: "Permite a Ana consultar"
+- Sistema verifica permisos del maestro
+- Se registran permisos temporales
+- Se confirma la delegación
+
+## 4. Seguridad y Permisos
+
+### 4.1 Niveles de Acceso
 1. **Maestro**
    - Acceso completo al sistema
    - Capacidad de delegación
@@ -89,15 +77,15 @@ sequenceDiagram
    - Registro supervisado de terapias
    - Sin acceso a delegación
 
-## Monitoreo y Logs
+## 5. Monitoreo
 
-### CloudWatch Metrics
+### 5.1 CloudWatch Metrics
 - Latencia de respuestas
 - Errores de procesamiento
 - Uso de intents
 - Patrones de acceso
 
-### Alertas Configuradas
+### 5.2 Alertas Configuradas
 - Errores críticos
 - Latencia elevada
 - Fallos de autenticación

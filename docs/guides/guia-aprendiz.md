@@ -1,60 +1,55 @@
-# docs/guides/apprentice-guide.md
+# docs/guides/guia-aprendiz.md
 
 # Guía del Aprendiz - Sistema de Terapias Homeopáticas
 
-## Acceso al Sistema
+## 1. Acceso al Sistema
 
-### 1. Permisos Básicos
+### 1.1 Permisos Básicos
 - Consulta de terapias autorizadas
-- Registro de nuevas terapias (con supervisión)
-- Consulta de fórmulas básicas
+- Registro de nuevas terapias (supervisado)
+- Acceso a fórmulas básicas
 
-### 2. Limitaciones
+### 1.2 Limitaciones
 - Sin acceso a delegación
-- Sin modificación de registros existentes
-- Consulta limitada a pacientes autorizados
+- Sin modificación de registros
+- Consulta limitada a pacientes asignados
 
-## Comandos Disponibles
+## 2. Comandos Disponibles
 
-### 1. Consultas
+### 2.1 Consultas Básicas
 ```
 "Alexa, muestra la última terapia de [paciente]"
 "Alexa, qué lleva la fórmula [nombre]"
 "Alexa, cómo se prepara [receta]"
 ```
 
-### 2. Registros
+### 2.2 Registro de Actividades
 ```
 "Alexa, registra terapia para [paciente]"
-"Alexa, anota los componentes usados con [paciente]"
+"Alexa, anota los componentes usados"
 ```
 
-## Flujos de Trabajo
+## 3. Procedimientos
 
-### 1. Preparación de Terapias
+### 3.1 Preparación de Terapias
 1. Verificar autorización
-2. Consultar historial del paciente
-3. Registrar nueva terapia
+2. Consultar historial
+3. Registrar actividad
 4. Confirmar registro
 
-### 2. Consulta de Fórmulas
+### 3.2 Consulta de Fórmulas
 1. Verificar componentes
-2. Consultar instrucciones
-3. Registrar preparación
+2. Seguir instrucciones
+3. Documentar preparación
 
-## Mejores Prácticas
+## 4. Mejores Prácticas
 
-1. **Verificación**
-   - Confirmar autorización antes de cada acción
-   - Verificar datos antes de registrar
-   - Consultar en caso de duda
+### 4.1 Registro de Actividades
+- Usar terminología correcta
+- Documentar observaciones
+- Mantener registros al día
 
-2. **Registro**
-   - Usar terminología estándar
-   - Incluir observaciones relevantes
-   - Mantener registros actualizados
-
-3. **Comunicación**
-   - Reportar anomalías
-   - Solicitar aclaraciones
-   - Mantener al maestro informado
+### 4.2 Comunicación
+- Reportar dudas al maestro
+- Confirmar instrucciones
+- Mantener información actualizada

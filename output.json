@@ -1,1 +1,0 @@
-{"version": "1.0", "response": {"outputSpeech": {"type": "PlainText", "text": "He registrado la terapia de acupuntura para Juan P\u00e9rez."}, "shouldEndSession": false, "reprompt": {"outputSpeech": {"type": "PlainText", "text": "\u00bfHay algo m\u00e1s en lo que pueda ayudarte?"}}}}

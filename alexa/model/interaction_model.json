@@ -71,6 +71,30 @@
                         "usos de {Remedio}",
                         "cuándo usar {Remedio}"
                     ]
+                },
+                {
+                    "name": "ConsultarFormulaIntent",
+                    "slots": [
+                        {
+                            "name": "TipoFormula",
+                            "type": "FormulaType"
+                        },
+                        {
+                            "name": "Paciente",
+                            "type": "AMAZON.Person"
+                        }
+                    ],
+                    "samples": [
+                        "qué fórmulas ha llevado {Paciente}",
+                        "muéstrame las fórmulas de {Paciente}",
+                        "busca las fórmulas para {Paciente}",
+                        "quién ha usado {TipoFormula}",
+                        "para quién hemos usado {TipoFormula}",
+                        "cuándo usamos {TipoFormula}",
+                        "consulta la fórmula {TipoFormula}",
+                        "búscame la fórmula {TipoFormula}",
+                        "qué pacientes han usado {TipoFormula}"
+                    ]
                 }
             ],
             "types": [
@@ -98,6 +122,7 @@
                     ]
                 },
                 {
+<<<<<<< Updated upstream
                     "name": "RemedioType",
                     "values": [
                         {
@@ -114,6 +139,36 @@
                         },
                         {
                             "name": {"value": "Walnut"}
+=======
+                    "name": "FormulaType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Arnica Montana",
+                                "synonyms": [
+                                    "árnica",
+                                    "arnica"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rescue Remedy",
+                                "synonyms": [
+                                    "rescue",
+                                    "rescate"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Star of Bethlehem",
+                                "synonyms": [
+                                    "estrella de belén",
+                                    "star bethlehem"
+                                ]
+                            }
+>>>>>>> Stashed changes
                         }
                     ]
                 }

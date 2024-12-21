@@ -1,0 +1,14 @@
+{
+  "dynamodb": {
+    "readCapacityUnits": 1,
+    "writeCapacityUnits": 1,
+    "autoScaling": true
+  },
+  "lambda": {
+    "memorySize": 128,
+    "timeout": 10
+  },
+  "cloudwatch": {
+    "retentionDays": 3
+  }
+}

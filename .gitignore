@@ -1,0 +1,7 @@
+.DS_Store
+.ask/
+*.backup
+backups/
+logs/
+*.tar.gz
+tests/results/

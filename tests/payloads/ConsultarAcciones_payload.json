@@ -2,7 +2,7 @@
   "version": "1.0",
   "session": {
     "new": true,
-    "sessionId": "amzn1.echo-api.session.dddcd5d2-c228-48f3-9658-efa1a98ffde1",
+    "sessionId": "amzn1.echo-api.session.53da13db-f964-4004-9247-83bec2b0a4a9",
     "application": {
       "applicationId": "amzn1.ask.skill.028ef8b0-b7cd-45e7-bc9c-08a4a213921e"
     },
@@ -12,8 +12,8 @@
   },
   "request": {
     "type": "IntentRequest",
-    "requestId": "amzn1.echo-api.request.6d9d129b-4d40-4f6a-8c9b-bdace4ffa0af",
-    "timestamp": "2024-11-26T17:06:06.796701",
+    "requestId": "amzn1.echo-api.request.862a8e08-e48b-42c0-873e-44935df1e767",
+    "timestamp": "2024-11-26T21:54:00.718997",
     "locale": "es-ES",
     "intent": {
       "name": "ConsultarAccionesAprendizIntent",

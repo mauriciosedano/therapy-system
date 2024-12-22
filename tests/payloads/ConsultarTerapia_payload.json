@@ -2,7 +2,7 @@
   "version": "1.0",
   "session": {
     "new": true,
-    "sessionId": "amzn1.echo-api.session.413a5338-4eb6-4fe1-9078-2fbc30eebada",
+    "sessionId": "amzn1.echo-api.session.0f079ff5-f62a-444e-b1f8-9b13b60f16aa",
     "application": {
       "applicationId": "amzn1.ask.skill.028ef8b0-b7cd-45e7-bc9c-08a4a213921e"
     },
@@ -12,8 +12,8 @@
   },
   "request": {
     "type": "IntentRequest",
-    "requestId": "amzn1.echo-api.request.d78f9873-b67f-46de-a93b-0b81cd18b395",
-    "timestamp": "2024-11-26T17:06:06.798351",
+    "requestId": "amzn1.echo-api.request.b427ce65-4106-4365-9a17-dc070daf6919",
+    "timestamp": "2024-11-26T21:54:00.720265",
     "locale": "es-ES",
     "intent": {
       "name": "ConsultarTerapiaIntent",

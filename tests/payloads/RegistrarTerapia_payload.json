@@ -2,7 +2,7 @@
   "version": "1.0",
   "session": {
     "new": true,
-    "sessionId": "amzn1.echo-api.session.bf92fdf4-e0de-46d1-a0b8-3fa359e1c83a",
+    "sessionId": "amzn1.echo-api.session.7acc7af0-a328-447e-a260-aa9847f09c50",
     "application": {
       "applicationId": "amzn1.ask.skill.028ef8b0-b7cd-45e7-bc9c-08a4a213921e"
     },
@@ -12,8 +12,8 @@
   },
   "request": {
     "type": "IntentRequest",
-    "requestId": "amzn1.echo-api.request.5c0ed223-f569-4bf7-a5ed-09e8116424ea",
-    "timestamp": "2024-11-26T17:06:06.797755",
+    "requestId": "amzn1.echo-api.request.1e592c61-79f5-4b1b-88e9-99b4ac6637ad",
+    "timestamp": "2024-11-26T21:54:00.719880",
     "locale": "es-ES",
     "intent": {
       "name": "RegistrarTerapiaIntent",

@@ -2,7 +2,7 @@
   "version": "1.0",
   "session": {
     "new": true,
-    "sessionId": "amzn1.echo-api.session.f785a39e-8ccc-43dd-9844-ffde6390a85a",
+    "sessionId": "amzn1.echo-api.session.ed1856ae-bd07-4242-8654-c44ff477156c",
     "application": {
       "applicationId": "amzn1.ask.skill.028ef8b0-b7cd-45e7-bc9c-08a4a213921e"
     },
@@ -12,8 +12,8 @@
   },
   "request": {
     "type": "IntentRequest",
-    "requestId": "amzn1.echo-api.request.e048dafa-4f6a-4393-b178-ed6a42d4a510",
-    "timestamp": "2024-11-26T17:06:06.795404",
+    "requestId": "amzn1.echo-api.request.f630ee6c-1612-43ea-8627-2f76e234aaf3",
+    "timestamp": "2024-11-26T21:54:00.717260",
     "locale": "es-ES",
     "intent": {
       "name": "DelegarAccesoIntent",

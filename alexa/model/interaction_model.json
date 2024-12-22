@@ -120,6 +120,10 @@
                         {
                             "name": "TipoFormula",
                             "type": "FormulaType"
+                        },
+                        {
+                            "name": "Sintoma",
+                            "type": "SintomaComun"
                         }
                     ],
                     "samples": [
@@ -127,7 +131,9 @@
                         "añade {TipoFormula} para {Paciente}",
                         "nueva fórmula de {TipoFormula} para {Paciente}",
                         "prepara {TipoFormula} para {Paciente}",
-                        "elabora una fórmula de {TipoFormula} para {Paciente}"
+                        "elabora una fórmula de {TipoFormula} para {Paciente}",
+                        "prepara {TipoFormula} para {Paciente} que tiene {Sintoma}",
+                        "{Paciente} necesita {TipoFormula} para {Sintoma}"
                     ]
                 },
                 {
@@ -177,6 +183,23 @@
                         "revisa las acciones de {Aprendiz} desde {FechaInicio}",
                         "muestra el historial de {Aprendiz} entre {FechaInicio} y {FechaFin}"
                     ]
+                },
+                {
+                    "name": "ConsultarRemedioIntent",
+                    "slots": [
+                        {
+                            "name": "Sintoma",
+                            "type": "SintomaComun"
+                        }
+                    ],
+                    "samples": [
+                        "qué remedio sirve para {Sintoma}",
+                        "qué me recomiendas para {Sintoma}",
+                        "qué puedo tomar para {Sintoma}",
+                        "qué fórmula es buena para {Sintoma}",
+                        "qué me das para {Sintoma}",
+                        "necesito algo para {Sintoma}"
+                    ]
                 }
             ],
             "types": [
@@ -210,32 +233,38 @@
                     "values": [
                         {
                             "name": {
-                                "value": "Arnica Montana"
+                                "value": "Arnica Montana",
+                                "synonyms": ["árnica", "arnica", "remedio para golpes"]
                             }
                         },
                         {
                             "name": {
-                                "value": "Belladona"
+                                "value": "Belladona",
+                                "synonyms": ["atropa belladonna", "belladonna", "remedio para fiebre"]
                             }
                         },
                         {
                             "name": {
-                                "value": "Calendula"
+                                "value": "Calendula",
+                                "synonyms": ["caléndula", "remedio para heridas"]
                             }
                         },
                         {
                             "name": {
-                                "value": "Chamomilla"
+                                "value": "Chamomilla",
+                                "synonyms": ["manzanilla", "camomila", "remedio para dolor"]
                             }
                         },
                         {
                             "name": {
-                                "value": "Rescue Remedy"
+                                "value": "Rescue Remedy",
+                                "synonyms": ["remedio rescate", "gotas rescate", "rescate"]
                             }
                         },
                         {
                             "name": {
-                                "value": "Star of Bethlehem"
+                                "value": "Star of Bethlehem",
+                                "synonyms": ["estrella de belén", "remedio para trauma"]
                             }
                         }
                     ]
@@ -259,6 +288,41 @@
                             "name": {
                                 "value": "consultar fórmulas",
                                 "synonyms": ["ver fórmulas", "revisar fórmulas"]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "SintomaComun",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "dolor de cabeza",
+                                "synonyms": ["cefalea", "migraña", "jaqueca"]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ansiedad",
+                                "synonyms": ["nervios", "angustia", "estrés"]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "insomnio",
+                                "synonyms": ["no puede dormir", "problemas para dormir"]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fiebre",
+                                "synonyms": ["calentura", "temperatura alta"]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "golpes",
+                                "synonyms": ["contusión", "moretón", "hematoma"]
                             }
                         }
                     ]
@@ -378,7 +442,7 @@
                 "variations": [
                     {
                         "type": "PlainText",
-                        "value": "¿Confirmas el registro del paciente {Nombre} con teléfono {Telefono}?"
+                        "value":"value": "¿Confirmas el registro del paciente {Nombre} con teléfono {Telefono}?"
                     }
                 ]
             },

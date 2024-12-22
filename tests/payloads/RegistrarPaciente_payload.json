@@ -2,7 +2,7 @@
   "version": "1.0",
   "session": {
     "new": true,
-    "sessionId": "amzn1.echo-api.session.e8812c66-0c98-457e-b83a-1eb72ce317ad",
+    "sessionId": "amzn1.echo-api.session.d6e2a3e2-470a-43db-b036-ff8d52d6b9f2",
     "application": {
       "applicationId": "amzn1.ask.skill.028ef8b0-b7cd-45e7-bc9c-08a4a213921e"
     },
@@ -12,8 +12,8 @@
   },
   "request": {
     "type": "IntentRequest",
-    "requestId": "amzn1.echo-api.request.ce5f4de7-c4f5-4c92-8aa7-bbc93cdce41c",
-    "timestamp": "2024-11-26T17:06:06.797072",
+    "requestId": "amzn1.echo-api.request.c556e069-c070-4e67-8ab4-01a63b19feda",
+    "timestamp": "2024-11-26T21:54:00.719453",
     "locale": "es-ES",
     "intent": {
       "name": "RegistrarPacienteIntent",

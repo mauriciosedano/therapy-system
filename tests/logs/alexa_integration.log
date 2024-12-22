@@ -347,3 +347,253 @@
 2024-11-26 12:06:10,061 [INFO] ✅ Tabla AuditLog: 1 registros encontrados
 2024-11-26 12:06:10,189 [INFO] ✅ Tabla Patients: 1 registros encontrados
 2024-11-26 12:06:10,323 [INFO] ✅ Tabla Therapies: 1 registros encontrados
+2024-11-26 16:41:22,635 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-26 16:41:22,841 [INFO] 🚀 Iniciando pruebas de integración de Alexa
+2024-11-26 16:41:22,842 [INFO] Probando intent: ConsultarAccionesAprendizIntent
+2024-11-26 16:41:24,035 [INFO] Respuesta recibida: {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "No encontr\u00e9 acciones registradas para Ana"
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "\u00bfHay algo m\u00e1s en lo que pueda ayudarte?"
+      }
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Consulta de Acciones",
+      "content": "No encontr\u00e9 acciones registradas para Ana"
+    }
+  }
+}
+2024-11-26 16:41:24,035 [INFO] ✅ Intent ConsultarAccionesAprendizIntent pasó la prueba
+2024-11-26 16:41:24,035 [INFO] Probando intent: ConsultarTerapiaIntent
+2024-11-26 16:41:24,205 [INFO] Respuesta recibida: {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "Hubo un error consultando las terapias. Por favor, intenta nuevamente."
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "\u00bfHay algo m\u00e1s en lo que pueda ayudarte?"
+      }
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Error",
+      "content": "Hubo un error consultando las terapias. Por favor, intenta nuevamente."
+    }
+  }
+}
+2024-11-26 16:41:24,206 [INFO] ✅ Intent ConsultarTerapiaIntent pasó la prueba
+2024-11-26 16:41:24,206 [INFO] Probando intent: DelegarAccesoIntent
+2024-11-26 16:41:24,365 [INFO] Respuesta recibida: {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "He autorizado a Ana para consultar pacientes"
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "\u00bfHay algo m\u00e1s en lo que pueda ayudarte?"
+      }
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Delegaci\u00f3n de Acceso",
+      "content": "He autorizado a Ana para consultar pacientes"
+    }
+  }
+}
+2024-11-26 16:41:24,365 [INFO] ✅ Intent DelegarAccesoIntent pasó la prueba
+2024-11-26 16:41:24,366 [INFO] Probando intent: RegistrarTerapiaIntent
+2024-11-26 16:41:24,506 [INFO] Respuesta recibida: {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "He registrado la terapia de Acupuntura para Mar\u00eda L\u00f3pez"
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "\u00bfHay algo m\u00e1s en lo que pueda ayudarte?"
+      }
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Registro de Terapia",
+      "content": "He registrado la terapia de Acupuntura para Mar\u00eda L\u00f3pez"
+    }
+  }
+}
+2024-11-26 16:41:24,506 [INFO] ✅ Intent RegistrarTerapiaIntent pasó la prueba
+2024-11-26 16:41:24,507 [INFO] Probando intent: RegistrarPacienteIntent
+2024-11-26 16:41:24,625 [INFO] Respuesta recibida: {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "He registrado al paciente Mar\u00eda L\u00f3pez con tel\u00e9fono 555-123-4567"
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "\u00bfHay algo m\u00e1s en lo que pueda ayudarte?"
+      }
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Registro de Paciente",
+      "content": "He registrado al paciente Mar\u00eda L\u00f3pez con tel\u00e9fono 555-123-4567"
+    }
+  }
+}
+2024-11-26 16:41:24,625 [INFO] ✅ Intent RegistrarPacienteIntent pasó la prueba
+2024-11-26 16:41:24,629 [INFO] 📊 Resumen de pruebas:
+2024-11-26 16:41:24,629 [INFO]    Total: 5
+2024-11-26 16:41:24,629 [INFO]    Exitosas: 5
+2024-11-26 16:41:24,630 [INFO]    Fallidas: 0
+2024-11-26 16:41:24,959 [INFO] ✅ Tabla AccessDelegation: 1 registros encontrados
+2024-11-26 16:41:25,048 [INFO] ✅ Tabla AuditLog: 1 registros encontrados
+2024-11-26 16:41:25,142 [INFO] ✅ Tabla Patients: 1 registros encontrados
+2024-11-26 16:41:25,233 [INFO] ✅ Tabla Therapies: 1 registros encontrados
+2024-11-26 16:54:01,201 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2024-11-26 16:54:01,324 [INFO] 🚀 Iniciando pruebas de integración de Alexa
+2024-11-26 16:54:01,325 [INFO] Probando intent: ConsultarAccionesAprendizIntent
+2024-11-26 16:54:02,537 [INFO] Respuesta recibida: {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "No encontr\u00e9 acciones registradas para Ana"
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "\u00bfHay algo m\u00e1s en lo que pueda ayudarte?"
+      }
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Consulta de Acciones",
+      "content": "No encontr\u00e9 acciones registradas para Ana"
+    }
+  }
+}
+2024-11-26 16:54:02,538 [INFO] ✅ Intent ConsultarAccionesAprendizIntent pasó la prueba
+2024-11-26 16:54:02,538 [INFO] Probando intent: ConsultarTerapiaIntent
+2024-11-26 16:54:02,701 [INFO] Respuesta recibida: {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "Hubo un error consultando las terapias. Por favor, intenta nuevamente."
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "\u00bfHay algo m\u00e1s en lo que pueda ayudarte?"
+      }
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Error",
+      "content": "Hubo un error consultando las terapias. Por favor, intenta nuevamente."
+    }
+  }
+}
+2024-11-26 16:54:02,702 [INFO] ✅ Intent ConsultarTerapiaIntent pasó la prueba
+2024-11-26 16:54:02,702 [INFO] Probando intent: DelegarAccesoIntent
+2024-11-26 16:54:02,842 [INFO] Respuesta recibida: {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "He autorizado a Ana para consultar pacientes"
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "\u00bfHay algo m\u00e1s en lo que pueda ayudarte?"
+      }
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Delegaci\u00f3n de Acceso",
+      "content": "He autorizado a Ana para consultar pacientes"
+    }
+  }
+}
+2024-11-26 16:54:02,843 [INFO] ✅ Intent DelegarAccesoIntent pasó la prueba
+2024-11-26 16:54:02,843 [INFO] Probando intent: RegistrarTerapiaIntent
+2024-11-26 16:54:02,960 [INFO] Respuesta recibida: {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "He registrado la terapia de Acupuntura para Mar\u00eda L\u00f3pez"
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "\u00bfHay algo m\u00e1s en lo que pueda ayudarte?"
+      }
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Registro de Terapia",
+      "content": "He registrado la terapia de Acupuntura para Mar\u00eda L\u00f3pez"
+    }
+  }
+}
+2024-11-26 16:54:02,960 [INFO] ✅ Intent RegistrarTerapiaIntent pasó la prueba
+2024-11-26 16:54:02,961 [INFO] Probando intent: RegistrarPacienteIntent
+2024-11-26 16:54:03,079 [INFO] Respuesta recibida: {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "He registrado al paciente Mar\u00eda L\u00f3pez con tel\u00e9fono 555-123-4567"
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "\u00bfHay algo m\u00e1s en lo que pueda ayudarte?"
+      }
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Registro de Paciente",
+      "content": "He registrado al paciente Mar\u00eda L\u00f3pez con tel\u00e9fono 555-123-4567"
+    }
+  }
+}
+2024-11-26 16:54:03,080 [INFO] ✅ Intent RegistrarPacienteIntent pasó la prueba
+2024-11-26 16:54:03,081 [INFO] 📊 Resumen de pruebas:
+2024-11-26 16:54:03,081 [INFO]    Total: 5
+2024-11-26 16:54:03,081 [INFO]    Exitosas: 5
+2024-11-26 16:54:03,082 [INFO]    Fallidas: 0
+2024-11-26 16:54:03,390 [INFO] ✅ Tabla AccessDelegation: 1 registros encontrados
+2024-11-26 16:54:03,492 [INFO] ✅ Tabla AuditLog: 1 registros encontrados
+2024-11-26 16:54:03,581 [INFO] ✅ Tabla Patients: 1 registros encontrados
+2024-11-26 16:54:03,668 [INFO] ✅ Tabla Therapies: 1 registros encontrados

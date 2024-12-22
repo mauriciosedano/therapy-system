@@ -74,9 +74,12 @@ class PatientHandler:
         try:
             response = self.dynamodb.scan(
                 TableName=PATIENTS_TABLE,
-                ProjectionExpression="Name, Phone, PatientID"
+                ProjectionExpression="#n, Phone, PatientID",
+                ExpressionAttributeNames={
+                    "#n": "Name"
+                }
             )
-            
+
             similar_patients = []
             for item in response.get('Items', []):
                 stored_name = item['Name']['S']

@@ -1,5 +1,8 @@
 import unittest
 from unittest.mock import patch, MagicMock
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '../../lambda/src'))
 from handlers.patient_handler import PatientHandler
 from datetime import datetime
 
